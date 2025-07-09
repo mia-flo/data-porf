@@ -20,139 +20,227 @@
 
 
 <body>
-    <header>
-        <!-- navigation -->
-        <nav>
-            <ul class="nav-link">
-                <li class="navigation-link innactive-link"><a href="index.html">
-                        <span class="material-symbols-outlined">home</span>Home</a></li>
-                <li class="navigation-link innactive-link"><a href="about.html">
-                        <span class="material-symbols-outlined">person </span>About </a></li>
-                <li class="navigation-link innactive-link"><a href="all_projects.html">
-                        <span class="material-symbols-outlined">analytics</span>All Projects</a>
-                </li>
-                <li class="navigation-link innactive-link"><a href="boulder.html">
-                        <i class="fa-solid fa-hill-rockslide"></i>My Bouldering</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
 
-    <!-- contact links -->
-    <div class="links">
-        <section>
-            <ul class="nav-out">
-                <li class="contact-link"><a href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                </li>
-                <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                        <i class="fa-brands fa-github"></i>github</a></li>
-                <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
-                        target="_blank">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
-                </li>
-            </ul>
-        </section>
-        <section class="line"></section>
-    </div>
 
     <!-- dark mode toggle -->
-    <div class="slider-div">
+    <!-- <div class="slider-div">
         <input type="checkbox" id="check">
         <label for="check" class="slider"></label>
-    </div>
+    </div> -->
 
     <main>
-        <h2 class="section-header">Project name</h2>
-        <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                    <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-            indepth look!
-        </p>
-        <div class="section-project">
-            <!-- project descriptions -->
-            <h3>Motivation</h3>
-            <p class="spacer-small">Brief description</p>
-            <h3>Tools and methods</h3>
-            <p class="spacer-small">Data from the World Health Organization (WHO) was aggregated in Microsoft
-                SQL Server and visualized in Tableau.
-            </p>
-            <h3>Insights and challenges</h3>
-            <p class="spacer-small">Insights and challenges</p>
-
-
-            <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                        <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-                indepth look!
-            </p>
-
-
-            <h2>what it's about forreal</h2>
-            <!-- global numbers -->
-            <div class="image-container">
-                <img src="images\covid\global.PNG" alt="" class="proj-img">
+        <!-- navigation -->
+        <div class="navigation">
+            <div class="sidebar-menu">
+                <ul>
+                    <li"><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="all_projects.html">Projects</a></li>
+                </ul>
             </div>
-            <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-                here</p>
-            <!-- contracted by country -->
-            <div class="image-container">
-                <img src="images\covid\country_contracted.PNG" alt="" class="proj-img">
+            <div class="ham-menu">
+                <span class="material-symbols-outlined">menu
+                </span>
             </div>
-            <!-- deaths by country -->
-            <div class="image-container">
-                <img src="images\covid\deaths_country.PNG" alt="" class="proj-img">
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="all_projects.html">Projects</a></li>
+                </ul>
             </div>
 
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\covid\vacc_country.PNG" alt="" class="proj-img">
-            </div>
-            <h2>what it's about forreal</h2>
-            <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-                here</p>
-
-            <h2>what it's about forreal</h2>
-            <p class="spacer-xlarge">description goes heredescription goes heredescription goes heredescription goes
-                here
-            </p>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images/covid/continent.PNG" alt="" class="proj-img">
-            </div>
-
-
-
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\covid\country_time.PNG" alt="" class="proj-img">
-            </div>
-
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\covid\rate_country.PNG" alt="" class="proj-img">
-            </div>
-
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\covid\rate_death_country.PNG" alt="" class="proj-img">
-            </div>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\covid\conditions.PNG" alt="" class="proj-img">
-            </div>
-
-
-
-            <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                        <i class="fa-solid fa-up-right-from-square"></i></a></u></p>
         </div>
 
-        <!-- to top -->
-        <div>
-            <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
-                    arrow_upward
-                </span></button>
-        </div>
+        <div class="main-bar">
+            <!-- contact links -->
+            <div class="links">
+                <section>
+                    <ul class="nav-out">
+                        <li class="contact-link"><a href="#" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                        <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
+                                <i class="fa-brands fa-github"></i>github</a></li>
+                        <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
+                        target="_blank">
+                        <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
+                </li> -->
+                    </ul>
+                </section>
+                <section class="line"></section>
+            </div>
 
+            <div class="section-project">
+                <div class="proj-intro">
+                    <h1>Exploratory analysis of global COVID-19 impact from May 2020-May 2023</h1>
+                    <!-- featured image -->
+                    <div class="image-container">
+                        <img class="img-cover" src="images\covid\vacc_country.PNG" alt="">
+                    </div>
+                    <!-- description -->
+                    <p class="spacer-small"><b>Objective: </b>to learn SQL and how to use Tableau, the data
+                        visualization software</p>
+                    <p class="spacer-small"><b>Languages: </b>SQL</p>
+                    <p class="spacer-small"><b>Tools: </b>MS SQL Server</p>
+                    <p class="spacer-small"><b>Methods: </b>data cleaning, common table expressions, window functions
+                        for data aggregation, geographic heat map of vaccinations and deaths , time series analysis of
+                        COVID cases and deaths
+                    </p>
+                    <p class="spacer-small"><b>Results: </b>Globally, the rate of death was around 0.9% for those who
+                        contracted COVID. The US was one of the hardest hit countries in terms of total deaths.</p>
+                    <p class="spacer-small"><b>Data set: </b>sourced from the <u><a
+                                href="https://ourworldindata.org/covid-deaths">World Health Organization</a></u></p>
+                </div>
+                <!-- links to project -->
+                <p class="spacer-small">See the code on my <u><a href="https://github.com/mia-flo/WHO_COVID_DATASET"
+                            target="_blank">github
+                            <i class="fa-solid fa-up-right-from-square"></i></a></u> or the dashboards on my <u><a
+                            href="https://public.tableau.com/app/profile/mia.flores6838/viz/COVIDdataexploration/Dashboard1"></a></u>
+                </p>
+                <h2>Total global human impact by May 2023</h2>
+                <!-- global numbers -->
+                <div class="image-container">
+                    <img src="images\covid\global.PNG" alt="" class="proj-img">
+                </div>
+
+                <!-- deaths by continent -->
+                <div class="image-container">
+                    <img src="images/covid/continent.PNG" alt="" class="proj-img">
+                </div>
+                <h2>Observing impact on a country level</h2>
+                <p class="spacer-small">While the data gathered may not be entirely accurate
+                    for every country, we can use heatmaps to make quick, qualitative comparisons between countries
+                    to
+                    observe the local impact.</p>
+                <!-- contracted by country -->
+                <div class="image-container">
+                    <img src="images\covid\country_contracted.PNG" alt="" class="proj-img">
+                </div>
+                <p class="spacer-small">Countries with relatively high rates of cases/population include the United
+                    States,
+                    France,
+                    Australia, Iceland, New Zealand, etc.
+                </p>
+                <!-- deaths by country -->
+                <div class="image-container">
+                    <img src="images\covid\deaths_country.PNG" alt="" class="proj-img">
+                </div>
+
+                <p class="spacer-small">The United States, however, had the highest number of deaths. And despite
+                    a lower rate of cases reported for these countries, Brazil, Russia, India, and Mexico are just
+                    some
+                    of the countries that experienced a high rate of death. </p>
+
+                <p class="spacer-small">A higher rate of death may be linked to several other factors such as
+                    a patient's overall health prior to contraction, quality of available care at the time, etc.
+                </p>
+
+                <h3>Total vaccinations</h3>
+                <p class="spacer-small">Vaccines started becoming available for select groups in the US at the end
+                    of
+                    2020 following select clinical trials.</p>
+                <!--  vaccinated by country -->
+                <div class="image-container">
+                    <img src="images\covid\vacc_country.PNG" alt="" class="proj-img">
+                </div>
+
+                <p class="spacer-small">The percent of individuals who received at least one does of a vaccinane
+                    is quite high except for in countries in Africa.
+                </p>
+
+
+
+                <h2>Time series analysis by select county</h2>
+                <p class="spacer-small">I chose countries with large populations, some first world, and countries
+                    that I
+                    have
+                    a personal interest in for a more indepth look.
+                </p>
+
+
+
+
+                <h3>Rolling count - % contracted over time by country</h3>
+                <p class="spacer-small">A rolling count of percent of the population who at some point
+                    contracted COVID from May 2020-May 2023. By May 2023, it is estimated that France and South
+                    Korea
+                    reached nearly 60% of the population who at on point contracted COVID.
+                </p>
+                <p class="spacer-small">And while the US had the highest rate of COVID deaths, the percent of the
+                    population
+                    who contracted it was roughly half that of France and South Korea.
+                </p>
+                <!-- percent contracted over time -->
+                <div class="image-container">
+                    <img src="images\covid\country_time.PNG" alt="" class="proj-img">
+                </div>
+                <p class="spacer-small">Despite the introduction of
+                    vaccines, the US, France, and the UK saw a steady increase in COVID contractions. Even more
+                    concerning
+                    was the sharp increase observed in several countries during later 2021-early 2022.
+                </p>
+                <p class="spacer-small">This timing seems to coincide with holidays and lockdown restrictions easing
+                    up
+                    and
+                    a greater
+                    availability of vaccinations. One would think that higher vaccination would lead to lower rates
+                    of
+                    contraction, but
+                    perhaps
+                    more people decided to congregate after receiving the vaccine.
+                </p>
+
+                <h3>Rate of population infected over time</h3>
+                <!-- pop/cases over time-->
+                <div class="image-container">
+                    <img src="images\covid\rate_country.PNG" alt="" class="proj-img">
+                </div>
+                <p class="spacer-small">France and South Korea in particular saw large spikes in population vs
+                    # of cases in the earlier parts of 2022.
+                </p>
+                <p class="spacer-small">Several fluctuations were observed for France.</p>
+
+                <h3>Rate of deaths per cases over time</h3>
+                <p class="spacer-small"></p>
+                <!-- death/cases over time -->
+                <div class="image-container">
+                    <img src="images\covid\rate_death_country.PNG" alt="" class="proj-img">
+                </div>
+
+                <p class="spacer-small">France and the UK were the early leaders in deaths per cases.</p>
+                <h2>Various conditions vs COVID death rate by country</h2>
+                <p class="spacer-small">It is likely that numerous different factors influenced each country's
+                    deaths per COVID cases. While difficult to determine the exact factors and their combined
+                    impacts on likelyhood of death after contracting COVID, I chose several variables to visualize.
+                </p>
+                <!-- comparing each country's rate of death to other conditions -->
+                <div class="image-container">
+                    <img src="images\covid\conditions.PNG" alt="" class="proj-img">
+                </div>
+
+                <p class="spacer-small">On the y-axis the log value for each country's rate of death (cases/deaths).
+                    On the x-axis' are cardiovascular death rate,
+                    human development index, population density, and life expectancy.
+                </p>
+
+                <p></p>
+
+                <!-- links to project -->
+                <p class="spacer-small">See the code on my <u><a href="https://github.com/mia-flo/WHO_COVID_DATASET"
+                            target="_blank">github
+                            <i class="fa-solid fa-up-right-from-square"></i></a></u> or the dashboards on my <u><a
+                            href="https://public.tableau.com/app/profile/mia.flores6838/viz/COVIDdataexploration/Dashboard1"></a></u>
+                </p>
+            </div>
+
+            <!-- to top -->
+            <div>
+                <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
+                        arrow_upward
+                    </span></button>
+            </div>
+        </div>
     </main>
 
     <script src="/js/script.js"></script>

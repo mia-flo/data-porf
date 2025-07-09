@@ -20,212 +20,229 @@
 
 
 <body>
-    <header>
-        <nav>
-            <ul class="nav-link">
-                <li class="navigation-link innactive-link"><a href="index.html"><span
-                            class="material-symbols-outlined">home</span>Home</a>
-                </li>
-                <li class="navigation-link innactive-link"><a href="about.html"><span
-                            class="material-symbols-outlined">person </span>About</a>
-                </li>
-                <li class="navigation-link active"><span class="material-symbols-outlined">analytics</span>All Projects
-                </li>
-                <li class="navigation-link innactive-link"><a href="boulder.html"><i
-                            class="fa-solid fa-hill-rockslide"></i>My Bouldering</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- contact links -->
-    <div class="links">
-        <section>
-            <ul class="nav-out">
-                <li class="contact-link"><a href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                </li>
-                <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                        <i class="fa-brands fa-github"></i>github</a>
-                </li>
-                <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
-                        target="_blank">
-                        <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
-                </li>
-            </ul>
-        </section>
-        <section class="line"></section>
-    </div>
-
-    <!-- dark mode toggle -->
-    <div class="slider-div">
-        <input type="checkbox" id="check">
-        <label for="check" class="slider"></label>
-    </div>
-
-
-    <!-- main -->
     <main>
-        <!-- filter projects -->
-        <div class="filter-container">
-            <button class="filter" onclick="filterElements('all')">All</button>
-            <button class="filter" onclick="filterElements('data')">Data Analysis</button>
-            <button class="filter" onclick="filterElements('ml')">Machine Learning</button>
-            <button class="filter" onclick="filterElements('python')">Python</button>
-            <button class="filter" onclick="filterElements('SQL')">SQL</button>
-            <button class="filter" onclick="filterElements('tableau')">Tableau</button>
-            <button class="filter" onclick="filterElements('C#')">C#</button>
-        </div>
-
-        <!-- featured projects -->
-        <section>
-            <h1 class="section-header">Projects</h1>
-        </section>
-
-
-        <div class="projects">
-
-            <!-- movie -->
-            <section>
-                <div class="project-card-filt python data ml">
-                    <div class="image-container">
-                        <img class="img-cover" src="images\movie\gross_actual_pred.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Data Analysis</p>
-                        <p class="tag">ML</p>
-                        <p class="tag">Python</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>Prediction of Film Gross with Multiple Linear Regression</h3>
-                        <p>description</p>
-                        <a href="movie.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-
-                </div>
-            </section>
-
-            <!-- customers -->
-            <section>
-                <div class="project-card-filt python SQL data">
-                    <div class="image-container">
-                        <img class="img-cover" src="images\customers\customer_hist.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Data Analysis</p>
-                        <p class="tag">Python</p>
-                        <p class="tag">SQL</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>Customer Segmentation based on Purchase History</h3>
-                        <p>description</p>
-                        <a href="customers.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
-
-            <!-- covid -->
-            <section>
-                <div class="project-card-filt SQL tableau data">
-                    <div class="image-container">
-                        <img class="img-cover" src="images/thoughtfulcoffee.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Data Analysis</p>
-                        <p class="tag">SQL</p>
-                        <p class="tag">Tableau</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>Exploration of COVID-19 Impact</h3>
-                        <p>description</p>
-                        <a href="project_template.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
-
-            <!-- superstore -->
-            <section>
-                <div class="project-card-filt python data">
-                    <div class="image-container">
-                        <img class="img-cover" src="images\superstore\prof_sales_time.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Data Analysis</p>
-                        <p class="tag">Python</p>
-
-                    </section>
-                    <section class="text-container">
-                        <h3>Analyzing the relationship between Discounts and Profit for a Global Superstore</h3>
-                        <p>description</p>
-                        <a href="project_template.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
-
-            <!-- tokyo weather -->
-            <section>
-                <div class="project-card-filt python data ml">
-                    <div class="image-container">
-                        <img class="img-cover" src="images\tokyo weather\max_pred.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Data Analysis</p>
-                        <p class="tag">ML</p>
-                        <p class="tag">Python</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>3 Year Forecast of Tokyo Weather Data</h3>
-                        <p>description</p>
-                        <a href="project_template.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
-
-            <!-- project -->
-            <section>
-                <div class="project-card-filt C#">
-                    <div class="image-container">
-                        <img class="img-cover" src="images/thoughtfulcoffee.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">C#</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>project title</h3>
-                        <p>description</p>
-                        <a href="project_template.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
-
-            <section>
-                <div class="project-card-filt python">
-                    <div class="image-container">
-                        <img class="img-cover" src="images/thoughtfulcoffee.png" alt="">
-                    </div>
-                    <section class="tag-container">
-                        <p class="tag">Python</p>
-                    </section>
-                    <section class="text-container">
-                        <h3>E-Book to Audio Book Conversion in Python</h3>
-                        <p>Converting </p>
-                        <a href="project_template.html" class="project-link"><button class="button">View
-                                Project</button></a>
-                    </section>
-                </div>
-            </section>
+        <!-- navigation -->
+        <div class="navigation">
+            <div class="sidebar-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li class="active-page"><a href="all_projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="ham-menu">
+                <span class="material-symbols-outlined">menu
+                </span>
+            </div>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="all_projects.html">Projects</a></li>
+                </ul>
+            </div>
 
         </div>
 
 
+        <div class="main-bar">
+            <!-- contact links -->
+            <div class="links">
+                <section>
+                    <ul class="nav-out">
+                        <li class="contact-link"><a href="#" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                        <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
+                                <i class="fa-brands fa-github"></i>github</a>
+                        </li>
+                        <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
+                                target="_blank">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
+                        </li> -->
+                    </ul>
+                </section>
+                <section class="line"></section>
+            </div>
+
+            <!-- dark mode toggle -->
+            <!-- <div class="slider-div">
+                <input type="checkbox" id="check">
+                <label for="check" class="slider"></label>
+            </div> -->
 
 
+
+            <!-- filter projects -->
+            <div class="filter-container">
+                <p>Filters: </p>
+                <button class="filter" onclick="filterElements('all')">All</button>
+                <button class="filter" onclick="filterElements('data')">Data Analysis</button>
+                <button class="filter" onclick="filterElements('ml')">Machine Learning</button>
+                <button class="filter" onclick="filterElements('python')">Python</button>
+                <button class="filter" onclick="filterElements('SQL')">SQL</button>
+                <button class="filter" onclick="filterElements('tableau')">Tableau</button>
+                <!-- <button class="filter" onclick="filterElements('C#')">C#</button> -->
+            </div>
+
+            <!-- featured projects -->
+            <section>
+                <h1 class="section-header">Projects</h1>
+            </section>
+
+
+            <div class="projects">
+
+                <!-- movie -->
+                <section>
+                    <div class="project-card-filt python data ml">
+                        <div class="image-container">
+                            <img class="img-cover" src="images\movie\gross_actual_pred.png" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Data Analysis</p>
+                            <p class="tag">Machine Learning</p>
+                            <p class="tag">Python</p>
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">Predicting film gross with multiple linear regression in Python</h3>
+                            <p class="proj-text-filt">Global film revenue has increased exponentially from 1980 to 2020,
+                                with a yearly
+                                mean gross in the billions since the early 2000s. How
+                                well can a film's
+                                gross be predicted using multiple variables such as budget, audience votes, genre, etc?
+                            </p>
+
+                        </section>
+                        <button class="button"><a href="movie.html" class="project-link">View Project</a>
+                        </button>
+
+                    </div>
+                </section>
+
+                <!-- customers -->
+                <section>
+                    <div class="project-card-filt python SQL data">
+                        <div class="image-container">
+                            <img class="img-cover" src="images\customers\customer_hist.png" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Data Analysis</p>
+                            <p class="tag">Python</p>
+                            <p class="tag">SQL</p>
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">Customer segmentation analysis based on purchase history</h3>
+                            <p class="proj-text-filt">Grouped customers into regular, return, new, and one-time
+                                customers based on their purchasing behavior. These groups were then analyzed for their
+                                impact on key metrics: % gross, % orders made, and % units sold. Calculation of the
+                                probability of each group to spend at least $100 per order.</p>
+
+                        </section>
+                        <button class="button"><a href="customers.html" class="project-link">View Project</a>
+                        </button>
+                    </div>
+                </section>
+
+
+
+                <!-- superstore -->
+                <section>
+                    <div class="project-card-filt python data">
+                        <div class="image-container">
+                            <img class="img-cover" src="images\superstore\sales_prof_timeseries.png" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Data Analysis</p>
+                            <p class="tag">Python</p>
+
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">Analysis of the relationship between profit, sales, and discounts for a
+                                global
+                                office supplier</h3>
+                            <p class="proj-text-filt">Determined what percentage of orders were profitable and the
+                                optimal discount percentages
+                                for maximizing both sales and profit for a company that saw a ~2x increase in sales but
+                                stagnant profit from 2011-2014. 1 sample t-tests further corroborated the negative
+                                impact of the company's high proportion of >20% discounts.</p>
+
+                        </section>
+                        <button class="button"><a href="officesupply.html" class="project-link">View Project</a>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- tokyo weather -->
+                <section>
+                    <div class="project-card-filt python data ml">
+                        <div class="image-container">
+                            <img class="img-cover" src="images\tokyo weather\max_pred.png" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Data Analysis</p>
+                            <p class="tag">Machine Learning</p>
+                            <p class="tag">Python</p>
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">Forecasting Tokyo's daily max temperature with XGBoost</h3>
+                            <p class="proj-text-filt">Trained a model to predict film gross based on multiple variables
+                                such as budget, genre,
+                                rating, etc using XGBoost's regressor. The forecast requires further tweaking as the
+                                predicted data does not reflect the complexity of the training data well.</p>
+
+                        </section>
+                        <button class="button"><a href="weather.html" class="project-link">Project</a>View
+                        </button>
+                    </div>
+                </section>
+
+                <!-- covid -->
+                <section>
+                    <div class="project-card-filt SQL tableau data">
+                        <div class="image-container">
+                            <img class="img-cover" src="images\covid\vacc_country.PNG" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Data Analysis</p>
+                            <p class="tag">SQL</p>
+                            <p class="tag">Tableau</p>
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">Exploratory analysis of global COVID-19 impact from May 2020-May 2023</h3>
+                            <p class="proj-text-filt">Used SQL to manipulate a large amount of World Health Organization
+                                data to explore the impact of COVID-19 on both a global and country scale.</p>
+
+                        </section>
+                        <button class="button"><a href="covid.html" class="project-link">View Project</a>
+                        </button>
+                    </div>
+                </section>
+
+                <!-- e-book conversion -->
+                <section>
+                    <div class="project-card-filt python">
+                        <div class="image-container">
+                            <img class="img-cover" src="" alt="">
+                        </div>
+                        <section class="tag-container">
+                            <p class="tag">Python</p>
+                        </section>
+                        <section class="text-container">
+                            <h3 class="title">E-book to audio book conversion in Python</h3>
+                            <p class="proj-text-filt">A program that converts text to speech.</p>
+
+                        </section>
+                        <button class="button"><a href="project_template.html" class="project-link">View Project</a>
+                        </button>
+                    </div>
+                </section>
+
+            </div>
+
+
+
+        </div>
         <!-- back to top button -->
         <div>
             <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">

@@ -86,6 +86,9 @@ html {
   height: 100vh;
   background-color: var(--main-color);
   font-size: 125%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -101,7 +104,7 @@ body {
   font-family: "Crimson Pro", Georgia, serif;
   line-height: 1.4;
   color: var(--text-color);
-  padding-top: 5vw;
+  overflow: hidden;
 }
 
 
@@ -121,87 +124,6 @@ header {
 }
 
 
-
-
-
-
-
-
-/* Main
----------------------------*/
-
-main {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  align-items: center;
-  flex: 1;
-  padding: 0;
-}
-
-
-/* ---- media query ---- */
-/* mobile */
-@media screen and (max-width: 35.5rem) {
-
-  /* navigation and links */
-  nav {
-    overflow: hidden;
-    position: relative;
-    background-color: var(--main-color-2);
-  }
-
-  nav .nav-link {
-    display: none;
-  }
-
-  .nav-out {
-    font-size: 0.5em;
-  }
-
-  .contact-link {
-    padding: 0 0.5rem 0 0;
-  }
-
-  .fa-brands {
-    font-size: 0.5em;
-  }
-
-  /* main */
-  main {
-    flex-direction: column;
-    align-self: center;
-    align-items: center;
-  }
-
-  .row1 {
-    flex-direction: column;
-  }
-
-  .row2 {
-    flex-direction: column;
-  }
-}
-
-
-@media screen and (min-width: 50rem) {
-  .section {
-    margin-bottom: var(--section-bottom-margin);
-    padding: var(--section-padding);
-    flex: 1;
-  }
-}
-
-@media (prefers-reduced-motion) {
-  .links>a>span {
-    transition: none;
-  }
-}
-
-
-
-
-
 /* section
 ---------------------------*/
 .section {
@@ -216,21 +138,13 @@ main {
   font-weight: 400;
   letter-spacing: -2px;
   line-height: 80%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem 0;
   color: var(--dark-accent);
 
   @media all and (max-width: 50rem) {
     padding: .5rem;
     padding-bottom: .6rem;
   }
-}
-
-.section-project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 
 
@@ -242,43 +156,13 @@ main {
   padding-left: 1em;
 }
 
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-h2 h3 {
-  align-items: center;
-}
-
-img {
-  margin: 0;
-  padding: 0;
-  /* object-fit: cover; */
-  width: 100%;
-}
-
-/* .img-cover {
-  min-height: 18.75rem;
-} */
-
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .spacer-small {
-  padding-bottom: 0.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 .spacer-large {
-  padding-bottom: 2rem;
-}
-
-.spacer-xlarge {
-  padding-bottom: 6rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Links section
@@ -370,27 +254,70 @@ a:visited {
   background-color: var(--main-color-2);
 }
 
-nav {
-  width: 100%;
+/* Main
+---------------------------*/
+
+main {
   display: flex;
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  background-color: var(--main-color);
-  border-bottom: var(--accent);
-  border-width: 1px;
-  box-shadow: var(--box-shadow-2)
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
 
-.nav-link {
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  list-style-type: none;
+/* side bar navigation */
+.sidebar-menu {
+  background-color: var(--dark-accent);
+  height: 100vh;
+  width: 5rem;
+  position: sticky;
+  top: 0;
+  text-align: center;
+}
+
+.sidebar-menu ul {
+  list-style: none;
   margin: 0;
   padding: 0;
-  height: 2.25rem;
+  color: var(--light-accent);
   width: 100%;
+}
+
+.active-page {
+  background-color: gray;
+}
+
+/* hamburger menu navigation */
+.off-screen-menu {
+  display: none;
+}
+
+.ham {
+  display: none;
+}
+
+
+
+
+
+
+/* main content */
+.main-bar {
+  /* background-color: blueviolet; */
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  align-items: center;
+}
+
+/* links to github etc */
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .nav-out {
@@ -401,31 +328,6 @@ nav {
   margin: 0;
   padding: 0;
   height: 2.25rem;
-  width: 100%;
-}
-
-.navigation-link {
-  font-size: 1.25rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
-  padding: .25rem 1.25rem .25rem 0rem;
-  color: var(--dark-accent);
-}
-
-.innactive-link:hover {
-  color: var(--dark-accent);
-  background-color: var(--accent);
-}
-
-
-/* links to github etc */
-.links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2rem;
   width: 100%;
 }
 
@@ -461,9 +363,12 @@ nav {
 }
 
 .fa-brands {
-  font-size: 1em;
+  font-size: 16px;
 }
 
+.fa-solid {
+  font-size: 16px;
+}
 
 .icon-adjust {
   font-size: 1.5rem;
@@ -523,9 +428,13 @@ input {
   display: none;
 }
 
+
+
 /* header section */
 
 .main-text-container {
+  height: 20rem;
+  width: 80%;
   background-color: var(--light-accent);
   display: flex;
   flex-direction: column;
@@ -535,7 +444,7 @@ input {
 
 
 
-/* home page -- project cards*/
+/* home page -- featured project cards*/
 .feat-projects {
   width: inherit;
   display: flex;
@@ -555,56 +464,100 @@ input {
 }
 
 .col1 {
-  /* flex: 75%; */
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
 .col2 {
-  /* flex: 75%; */
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 50%;
 }
 
+/* project cards on homepage */
 .project-card {
-  align-self: center;
-  width: 85%;
-  max-width: 40rem;
-  position: relative;
+  width: 60%;
+  height: 25rem;
   margin-bottom: 4rem;
   background-color: var(--main-color-2);
   color: var(--dark-accent);
   border-color: var(--dark-accent);
   box-shadow: 0 1px 3px var(--light-accent), 0 1px 2px var(--light-accent);
-  height: 25rem;
-
-  img-cover {
-    max-height: 75%;
-    object-fit: fill;
-  }
 }
 
-.image-container {
+.image-container-home {
+  height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 75%;
-  margin: 0.5rem 0;
+  padding: 0.25rem;
+  margin: 0.25rem;
+}
+
+.img-cover {
+  margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.alternate-fit {
+  object-fit: cover;
+}
+
+.tag-container-home {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 0;
+  padding: 0.1rem;
+}
+
+.tag {
+  font-size: 10px;
+}
+
+.title-home {
+  width: 100%;
+  height: 30%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+.text-container-home {
+  height: 30%;
+  padding: 0 0.5rem;
+}
+
+.proj-text {
+  padding: 0;
+  font-size: 14px;
 }
 
 
 
 /* all projects page -- project filtering section */
+.section-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .filter-container {
   display: flex;
   align-items: center;
   justify-content: right;
   width: 100%;
   height: 5vh;
-  margin: 0;
+  margin: 0.5rem;
   padding: 0;
 }
 
@@ -626,27 +579,31 @@ input {
   overflow: hidden;
 }
 
+/* project cards with filter */
 .project-card-filt {
   float: left;
   align-self: center;
   width: 100%;
-  max-width: 40rem;
+  width: 32.5rem;
+  height: 32.5rem;
   position: relative;
   margin-bottom: 4rem;
   background-color: var(--main-color-2);
   color: var(--dark-accent);
   border-color: var(--dark-accent);
-  /* background-color: white; */
   box-shadow: 0 1px 3px var(--light-accent), 0 1px 2px var(--light-accent);
-
-  img {
-    width: 100%;
-    object-fit: fill;
-
-  }
-
   display: none;
 }
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+  margin: 0.25rem;
+  height: 50%;
+}
+
 
 .tag-container {
   display: flex;
@@ -658,42 +615,50 @@ input {
 
 .tag {
   margin: 0 1vw;
+  padding: 0.25vw;
   background-color: var(--light-accent);
   color: var(--dark-accent);
   border-radius: 8%;
-  padding: 0.25vw;
-  font-size: 0.75em;
+  font-size: 14px;
 }
 
+.text-container {
+  height: 35%;
+  padding: 0 1rem;
+}
 
+.title {
+  text-align: center;
+  font-size: 24px;
+  margin: 0.25rem;
+  padding: 0;
+}
+
+.proj-text-filt {
+  font-size: 18px;
+}
+
+/* project card button */
 .button {
+  float: right;
   font-family: "Crimson Pro", Georgia, serif;
-  font-size: 0.8rem;
+  font-size: 14px;
   font-style: bold;
   border-radius: 10%;
   padding: 0.2rem;
-  margin-bottom: 0;
+  margin: 0.25rem;
   cursor: pointer;
   background-color: var(--accent);
   color: var(--dark-accent);
+  width: auto;
+  position: absolute;
+  bottom: 2.5%;
+  right: 2.5%;
 }
 
 button:hover {
   background-color: var(--light-accent);
 }
-
-
-a.button {
-  font-family: "Crimson Pro", Georgia, serif;
-  font-size: 1.3rem;
-  font-style: bold;
-  border-radius: 20px;
-  border-style: outset;
-  padding: 16px;
-  cursor: pointer;
-  text-decoration: none;
-}
-
 
 /* project pages */
 .proj-img {
@@ -701,14 +666,27 @@ a.button {
 
 }
 
+.section-project h1 h2 h3 {
+  margin: 0.5rem;
+}
 
+.section-project p {
+  width: 90%;
+}
+
+.proj-intro p {
+  text-align: left;
+}
 
 
 /* other */
 
-.active {
+/* .active {
   color: var(--accent);
-}
+} */
+
+/*  */
+
 
 /* filter */
 
@@ -740,4 +718,284 @@ a.button {
 .to-top:hover {
   background-color: var(--light-accent);
   color: var(--dark-accent);
+}
+
+
+
+/* ---- media queries ---- */
+/* ------- monitors and desktops ------- */
+@media screen and (max-width: 1980px) {
+
+  /* home page project cards */
+
+
+  /* all project cards */
+
+
+  .tag {
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 0.25vw;
+  }
+
+  .col1 {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 50%;
+    padding-right: 2rem;
+  }
+
+  .col2 {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    width: 50%;
+    padding-left: 2rem;
+  }
+
+  .sidebar-menu {
+    height: 100%;
+  }
+
+
+}
+
+/* ------- laptops ------- */
+@media screen and (max-width: 1200px) {
+
+  .sidebar-menu {
+    height: 100%;
+  }
+
+
+  /* home page project cards */
+
+  /* all project cards */
+  .project-card {
+    align-self: center;
+    width: 90%;
+    height: 22rem;
+    position: relative;
+    margin-bottom: 4rem;
+
+  }
+
+  .title-home {
+    font-size: 15px;
+  }
+
+  .project-card button {
+    font-size: 11px;
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    margin: 0;
+  }
+
+
+}
+
+/* ------- tablets ------- */
+@media screen and (max-width: 810px) {
+
+  /* main - change to single column for feat proj */
+  main {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+
+  /*  navigation*/
+  .navigation {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    width: 100vw;
+    background-color: var(--accent);
+    position: fixed;
+    z-index: 1;
+  }
+
+  .sidebar-menu {
+    display: none;
+  }
+
+  /* change to hamburger */
+  .off-screen-menu {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: var(--accent);
+    width: 450px;
+    height: auto;
+    overflow: hidden;
+    position: fixed;
+    top: 1rem;
+    right: -450px;
+    transition: .3s ease;
+  }
+
+  .off-screen-menu ul {
+    list-style-type: none;
+  }
+
+  .off-screen-menu.active {
+    right: 0;
+    padding-right: 0.5rem;
+  }
+
+  .ham-menu {
+    display: flex;
+    color: var(--dark-accent);
+    position: relative;
+    right: 0.5rem;
+    background-color: var(--accent);
+  }
+
+
+  /* homepage - change into single column layout */
+  .row1 {
+    flex-direction: column;
+  }
+
+  .row2 {
+    flex-direction: column;
+  }
+
+  .col1 {
+    width: 100%;
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .col2 {
+    width: 100%;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  /* home page project cards */
+
+  .project-card {
+    width: 50%;
+    margin: 1rem;
+  }
+
+  .tag {
+    font-size: 12px;
+  }
+
+  .title-home {
+    font-size: 16px;
+  }
+
+  .proj-text {
+    font-size: 14px;
+    padding: 0.25rem;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+}
+
+
+/* -------mobile------- */
+@media screen and (max-width: 480px) {
+
+  .nav-out {
+    font-size: 0.5em;
+  }
+
+  .contact-link {
+    padding: 0 0.5rem 0 0;
+    font-size: 18px;
+  }
+
+  .fa-brands {
+    font-size: 12px;
+  }
+
+
+
+
+  /* home page layout change to single column */
+
+  main {
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+  }
+
+  .row1 {
+    flex-direction: column;
+  }
+
+  .row2 {
+    flex-direction: column;
+  }
+
+  .col1 {
+    width: 100%;
+  }
+
+  .col2 {
+    width: 100%;
+  }
+
+  /* home page project cards */
+  .project-card {
+    /* height: 12rem; */
+    width: 16.25rem;
+    height: 16.25rem;
+    margin: 0.5rem;
+  }
+
+  .tag {
+    font-size: 11px;
+  }
+
+  .text-container-home {
+    height: auto;
+  }
+
+  .title-home {
+    font-size: 16px;
+  }
+
+  .proj-text {
+    display: none;
+  }
+
+  .button {
+    font-size: 11px;
+    width: auto;
+
+  }
+
+
+  /* all projects page */
+
+  .filter-container {
+    font-size: 10px;
+  }
+
+  .filter {
+    font-size: 8px;
+  }
+
+  .project-card-filt {
+    width: 16.25rem;
+    height: 16.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 14px;
+  }
+
+  .proj-text-filt {
+    display: none;
+  }
+
 }

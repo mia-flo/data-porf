@@ -20,101 +20,97 @@
 
 
 <body>
-  <header>
+
+  <main>
     <!-- navigation -->
-    <nav>
-      <ul class="nav-link">
-        <li class="navigation-link innactive-link"><a href="index.html"><span
-              class="material-symbols-outlined">home</span>Home</a></li>
-        <li class="navigation-link active">
-          <span class="material-symbols-outlined">person</span>About
-        </li>
-        <li class="navigation-link innactive-link"><a href="all_projects.html"><span
-              class="material-symbols-outlined">analytics</span>All Projects</a>
-        </li>
-        <li class="navigation-link innactive-link"><a href="boulder.html"><i class="fa-solid fa-hill-rockslide"></i>My
-            Bouldering</a></li>
-      </ul>
-    </nav>
-  </header>
+    <div class="navigation">
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active-page"><a href="#">About</a></li>
+          <li><a href="all_projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="ham-menu">
+        <span class="material-symbols-outlined">menu
+        </span>
+      </div>
+      <div class="off-screen-menu">
+        <ul>
+          <li"><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="all_projects.html">Projects</a></li>
+            <li><a href="project_template.html">Template</a></li>
+        </ul>
+      </div>
 
-  <!-- contact links -->
-  <div class="links">
-    <section>
-      <ul class="nav-out">
-        <li class="contact-link"><a href="#" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-        </li>
-        <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-            <i class="fa-brands fa-github"></i>github</a>
-        </li>
-        <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
+    </div>
+
+    <div class="main-bar">
+      <!-- contact links -->
+      <div class="links">
+        <section>
+          <ul class="nav-out">
+            <li class="contact-link"><a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            </li>
+            <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
+                <i class="fa-brands fa-github"></i>github</a>
+            </li>
+            <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
             <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
-        </li>
-      </ul>
-    </section>
-    <section class="line"></section>
-  </div>
+        </li> -->
+          </ul>
+        </section>
+        <section class="line"></section>
+        <p class="spacer-small"><button class="resume" onclick="location.href='miaflores_resume.pdf'">Full resume</button>
+        </p>
+      </div>
 
-  <!-- dark mode toggle -->
-  <!-- <div class="slider-div">
+      <!-- dark mode toggle -->
+      <!-- <div class="slider-div">
     <input type="checkbox" id="check">
     <label for="check" class="slider"></label>
   </div> -->
+      <h1 class="section-header">About Me</h1>
 
-  <main>
-    <h2 class="section-header">About Me</h2>
+      <div class="section-project">
+        <p class="spacer-large">My name is Mia and I am a geoscientist turned data analyst in San Francisco, CA.</p>
 
-    <div class="section-project">
-      <section class="text-container">
-        <p class="spacer-large">I am former geoscientist and now data analyst. I love learning
-        </p>
-        <!-- education -->
-        <h3>Education</h3>
-        <p class="spacer-xlarge">I received my B.S. in the Geological Sciences from San Diego State University
-          before going on to spend 3.5 years as a PhD candidate in Stanford's Geological Sciences department.</p>
+        <p class="spacer-large">I received my BS in the geological sciences at San Diego State University and spent
+          about 3.5 years as a PhD candidate studying geological phenomena at Stanford University.</p>
 
-        <p class="spacer-xlarge">
-          As a graduate student, I spent most of my time collecting and analyzing data. The data I collected was used to
-          make decisions about how I allocated resources and the directions of my projects.
-        </p>
+        <p class="spacer-large">While I of course honed my techincal skills such as the collection, cleaning, and
+          analysis
+          of data, my time in academia also taught me the importance of collaboration and of developing a diverse skill
+          set.</p>
 
-        <p class="spacer-xlarge">I also participated in committees where I collaborated with faculty, administrators,
-          and
-          students of multiple departments as a bridge in communication.</p>
-        <!-- experience -->
-        <h3>Experience</h3>
-        <p class="spacer-xlarge">I began my coding journey with <u>HTML, CSS, and Javascript through freeCodeCamp's
-            webdesign course</u>.
-          I found that I enjoyed the process and challenge of solving problems and creating with code. This led me to
-          further explore
-          coding and
-        </p>
-        <p class="spacer-xlarge">As a scientist, the next language I decided to learn was <u>Python</u>. I enjoyed the
-          versatility
-          of Python - going on to create data analysis and machine learning projects as well as simple apps and games.
-          Naturally, the
-          next language I learned was <u>SQL</u>.
+        <p class="spacer-large">Since then I have broadened my horizons through learning how to code. freeCodeCamp's
+          front-end web development
+          course (HTML, CSS, and JavaScript) was my first experience with code outside of Matlab. Adding Python and SQL
+          to my toolkit was
+          the natural next
+          step for me as I created data analysis and simple machine learning projects.</p>
+
+        <p class="spacer-large">Through these projects I am continuing to hone my skills in analyzing and interpreting
+          data. I also intend to improve my existing machine learning projects as well as explore more machine learning
+          techniques and algorithms.
+
         </p>
 
-        <p class="spacer-xlarge">I've recently taken an interest in app and game development so am starting to learn
-          <u>C#</u>.
-        </p>
-        <!-- hobbies -->
-        <h3>Hobbies and interests</h3>
-        <p class="spacer-xlarge">I played soccer growing up and still joined local pickup games while in graduate
-          school. Recently, I've taken an
-          interest in indoor bouldering. I'm still a beginner but you can check out my little bouldering blog.
-        </p>
-        <p class="spacer-xlarge">Video games have been near and dear to my heart since I was a child. It was one of mine
-          and my sibling's favorite
-          ways to spend time together and still is to this day.
-        </p>
+        <p class="spacer-large"><b>My current goals: </b>improve in statistics and mathematics</p>
 
-        <p class="spacer-xlarge">I am studying Japanese</p>
-      </section>
+        <p class="spacer-large"><b>Current personal project: </b>webscraping WNBA data in Python using
+          BeautifulSoup4</p>
+
+        <p class="spacer-large">Check out the <u><a href="all_projects.html">project page</a></u> or my <u><a
+              href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
+              <i class="fa-solid fa-up-right-from-square"></i></a></u> to learn more about some of my personal
+          projects.</p>
+      </div>
+
     </div>
-
+    <!-- back to top button -->
     <div>
       <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
           arrow_upward

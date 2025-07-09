@@ -20,124 +20,159 @@
 
 
 <body>
-    <header>
+    <main>
         <!-- navigation -->
-        <nav>
-            <ul class="nav-link">
-                <li class="navigation-link innactive-link"><a href="index.html">
-                        <span class="material-symbols-outlined">home</span>Home</a>
-                </li>
-                <li class="navigation-link innactive-link"><a href="about.html">
-                        <span class="material-symbols-outlined">person </span>About</a>
-                </li>
-                <li class="navigation-link innactive-link"><a href="all_projects.html">
-                        <span class="material-symbols-outlined">analytics</span>All Projects</a>
-                </li>
-                <li class="navigation-link innactive-link"><a href="boulder.html">
-                        <i class="fa-solid fa-hill-rockslide"></i>My Bouldering</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+        <div class="navigation">
+            <div class="sidebar-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="all_projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="ham-menu">
+                <span class="material-symbols-outlined">menu
+                </span>
+            </div>
+            <div class="off-screen-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="all_projects.html">Projects</a></li>
+                </ul>
+            </div>
 
-    <!-- contact links -->
-    <div class="links">
-        <section>
-            <ul class="nav-out">
-                <li class="contact-link"><a href="#" target="_blank">
-                        <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                </li>
-                <li class="contact-link"><a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i>github</a></li>
-                <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
+        </div>
+
+        <div class="main-bar">
+            <!-- contact links -->
+            <div class="links">
+                <section>
+                    <ul class="nav-out">
+                        <li class="contact-link"><a href="#" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                        </li>
+                        <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
+                                <i class="fa-brands fa-github"></i>github</a></li>
+                        <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
                         target="_blank">
                         <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
-                </li>
-            </ul>
-        </section>
-        <section class="line"></section>
-    </div>
+                </li> -->
+                    </ul>
+                </section>
+                <section class="line"></section>
+            </div>
 
-    <!-- dark mode toggle -->
-    <!-- <div class="slider-div">
+            <!-- dark mode toggle -->
+            <!-- <div class="slider-div">
         <input type="checkbox" id="check">
         <label for="check" class="slider"></label>
     </div> -->
 
-    <main>
-        <h2 class="section-header">Customer Segmentation in SQL</h2>
-        <div class="section-project">
-            <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                        <i class="fa-solid fa-up-right-from-square"></i></a></u>
-            </p>
-            <h3>Motivation</h3>
-            <p class="spacer-small">Motivation</p>
-            <h3>Tools and methods</h3>
-            <p class="spacer-small">Customers were identified and grouped into regular, return,
-                new, and one-time customers using Microsoft SQL Server. Groups were created
-                based on total number of individual orders, total amount spent, and cumulative number of units
-                purchased.
-                Customer history aggregations were also conducted in Microsoft SQL Server.
-            </p>
-            <p class="spacer-small"></p>
-            <h3>Insights and challenges</h3>
-            <p class="spacer-large">The biggest challenge in this project was deciding the thresholds for
-                segmenting customers.
-            </p>
-            <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                        <i class="fa-solid fa-up-right-from-square"></i></a></u>
-            </p>
-            <h2>what it's about forreal</h2>
-            <p class="spacer-small">description goes heredescription goes heredescription goes heredescription goes
-                here</p>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\customers\customer_hist.png" alt="" class="proj-img">
-            </div>
 
 
+            <div class="section-project">
+                <div class="proj-intro">
+                    <h1>Customer segmentation analysis based on purchase history using SQL</h1>
+                    <!-- featured image -->
+                    <div class="image-container">
+                        <img src="images\customers\customer_hist.png" alt="" class="proj-img">
+                    </div>
+                    <!-- description -->
+                    <p class="spacer-small"><b>Objective: </b>To group customers based on their purchasing behavior</p>
+                    <p class="spacer-small"><b>Languages: </b>SQL, Python</p>
+                    <p class="spacer-small"><b>Tools: </b></p>
+                    <p class="spacer-small">-MS SQL Server</p>
+                    <p class="spacer-small"><u>-Jupyter notebooks:</u> Scipy, statsmodels, pandas, numpy, math,
+                        matplotlib,
+                        seaborn</p>
+                    <p class="spacer-small"><b>Methods: </b>
+                    </p>
+                    <p class="spacer-small"><u>-SQL:</u> data cleaning, common table expressions, running total
+                        calculations
+                        with window functions</p>
+                    <p class="spacer-small"><u>-Python:</u> probability density functions for probability calculations
+                    </p>
+                    <p class="spacer-small"><b>Results: </b></p>
+                    <p class="spacer-small"><b>Data set: </b>sourced from <u><a
+                                href="https://www.kaggle.com/datasets/vijayuv/onlineretail">kaggle</a></u> - 541,909
+                        records aggregated with SQL
+                        into 18,528 orders, +8,900 returns, and
+                        +134,000
+                        inventory records for 4,343 unique customers across 36 countries.</p>
+                </div>
+                <!-- link to github project -->
+                <p class="spacer-small">See the full project on my <u><a
+                            href="https://github.com/mia-flo/Customer-segmentation" target="_blank">github
+                            <i class="fa-solid fa-up-right-from-square"></i></a></u>
+                </p>
+                <h2>Customer groups</h2>
+                <div class="image-container">
+                    <img src="images\customers\customers.png" alt="" class="proj-img">
+                </div>
+                <p class="spacer-small"><b>Regular: </b>3 or more months with consecutive orders</p>
+                <p class="spacer-small"><b>Return: </b>3 or more orders in non-consecutive months</p>
+                <p class="spacer-small"><b>New: </b>2 orders</p>
+                <p class="spacer-small"><b>One-time: </b>1 order</p>
 
-            <h2>Percent contribution of each customer type to major metrics</h2>
-            <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-                here</p>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\customers\gross.png" alt="" class="proj-img">
-            </div>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\customers\orders.png" alt="" class="proj-img">
-            </div>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\customers\units.png" alt="" class="proj-img">
-            </div>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="" alt="" class="proj-img">
-            </div>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="" alt="" class="proj-img">
-            </div>
-            <h3>Likelyhood of amount spent by customer type</h3>
-            <!-- figure -->
-            <div class="image-container">
-                <img src="images\customers\cdf_spent.png" alt="" class="proj-img">
+                <h2>Percent contribution of each customer type to key metrics</h2>
+                <p class="spacer-large">Regular customers, by far, contributed the most to the business
+                    in the key metrics of gross, number of orders, and number of units sold despite making up only 20%
+                    of the customer base.
+                </p>
+                <!-- gross -->
+                <div class="image-container">
+                    <img src="images\customers\gross.png" alt="" class="proj-img">
+                </div>
+                <!-- orders -->
+                <div class="image-container">
+                    <img src="images\customers\orders.png" alt="" class="proj-img">
+                </div>
+                <!-- units -->
+                <div class="image-container">
+                    <img src="images\customers\units.png" alt="" class="proj-img">
+                </div>
+
+                <h2>Spending probabilities by customer type</h2>
+                <p class="spacer-small">Probability distribution vs total amount spent by each customer during their
+                    tenure.
+                </p>
+                <!-- probability dist-->
+                <div class="image-container">
+                    <img src="images\customers\prob_spent.png" alt="" class="proj-img">
+                </div>
+                <h3>Probability of each customer spending at least $100</h3>
+                <!-- regular prob $100 -->
+                <div class="image-container">
+                    <img src="images\customers\reg_prob_100.png" alt="" class="proj-img">
+                </div>
+                <!-- return prob $100 -->
+                <div class="image-container">
+                    <img src="images\customers\return_prob_100.png" alt="" class="proj-img">
+                </div>
+                <!-- new prob $100 -->
+                <div class="image-container">
+                    <img src="images\customers\new_prob_100.png" alt="" class="proj-img">
+                </div>
+                <!-- one-time prob $100 -->
+                <div class="image-container">
+                    <img src="images\customers\one_prob_100.png" alt="" class="proj-img">
+                </div>
+                <p></p>
+                <!-- link to github project -->
+                <p class="spacer-small">See the full project on my <u><a
+                            href="https://github.com/mia-flo/Customer-segmentation" target="_blank">github
+                            <i class="fa-solid fa-up-right-from-square"></i></a></u>
+                </p>
             </div>
 
-            <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-                        <i class="fa-solid fa-up-right-from-square"></i></a></u>
-            </p>
+            <!-- to top -->
+            <div>
+                <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
+                        arrow_upward
+                    </span></button>
+            </div>
         </div>
-
-        <!-- to top -->
-        <div>
-            <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
-                    arrow_upward
-                </span></button>
-        </div>
-
     </main>
 
     <script src="/js/script.js"></script>

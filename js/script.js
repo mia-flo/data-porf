@@ -1,3 +1,15 @@
+// hamburger menu for tablet/mobile
+const hamMenu = document.querySelector('.ham-menu');
+
+const offScreenMenu = document.querySelector('.off-screen-menu');
+
+hamMenu.addEventListener('click', () =>
+{
+    hamMenu.classList.toggle('active');
+    offScreenMenu.classList.toggle('active');
+})
+
+
 // scroll back to top
 
 window.onscroll = function () { scrollFunction() };
@@ -73,18 +85,6 @@ function removeFilter(element, name)
 }
 
 
-// hamburger menu for mobile
-function hamburger()
-{
-    var doc = document.getElementsByClassName("navigation");
-    if (doc.style.display === "block")
-    {
-        doc.style.display = "none";
-    } else
-    {
-        doc.style.display = "block";
-    }
-}
 
 
 

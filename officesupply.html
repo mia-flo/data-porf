@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html class="preload" lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="author" content="Mia Flores">
+  <meta name="keywords" content="data analysis, python, sql, data exploration, data visualization">
+  <title>Mia Flores - Data Analyst</title>
+  <meta name="description" content="A sneakpeak into my current indoor bouldering journey.">
+  <link rel="shortcut icon" href="/images/apffavicon.png">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+
+<body>
+  <!-- main -->
+  <main>
+    <!-- navigation -->
+    <div class="navigation">
+      <div class="sidebar-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="all_projects.html">Projects</a></li>
+        </ul>
+      </div>
+      <div class="ham-menu">
+        <span class="material-symbols-outlined">menu
+        </span>
+      </div>
+      <div class="off-screen-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="all_projects.html">Projects</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="main-bar">
+      <!-- contact links -->
+      <div class="links">
+        <section>
+          <ul class="nav-out">
+            <li class="contact-link"><a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            </li>
+            <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
+                <i class="fa-brands fa-github"></i>github</a></li>
+            <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
+        </li> -->
+          </ul>
+        </section>
+        <section class="line"></section>
+      </div>
+
+      <!-- dark mode toggle -->
+      <!-- <div class="slider-div">
+    <input type="checkbox" id="check">
+    <label for="check" class="slider"></label>
+  </div> -->
+
+      <div class="section-project">
+        <div class="proj-intro">
+          <!-- description -->
+          <h1>Analysis of the relationship between profit and sales vs
+            discounts for a global office supply company</h1>
+          <!-- featured image -->
+          <div class="image-container">
+            <img src="images\superstore\sales_prof_timeseries.png" alt="" class="proj-img">
+          </div>
+          <p class="spacer-small"><b>Objective: </b><br>1. To explore the impact of discounts on sales and profit
+            for a <br>2. To determine what percentages of discounts were associated with increased profit</p>
+          <p class="spacer-small"><b>Language: </b>Python</p>
+          <p class="spacer-small"><b>Methods: </b><br>-time series analysis of revenue and profit<br>-linear
+            regression<br>
+            -probability calculation for a given dollar amount at a specified discount percentage<br>
+            -1 sample t-tests to determine whether the impact of discounted sales were statisticall significant</p>
+          <p class="spacer-small"><b>Tools: </b>Pandas, Numpy, Math, Seaborn, Matplotlib, SciPy, Scikit-Learn</p>
+          <p class="spacer-small"><b>Results: </b>Discounts at the 7-20% level are associated with a statistically
+            significant
+            increase in both sales and profit. </p>
+          <p class="spacer-small"><b>Data set: </b>sourced from <u><a
+                href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset">kaggle</a></u> - 51,290
+            records over 147 countries and 1,590 customers</p>
+          <p></p>
+        </div>
+        <p class="spacer-small">See the full project on my <u><a
+              href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
+              <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
+          indepth look!
+        </p>
+
+        <!-- <h3>How many orders have a Profit/Sales ratio > 30%</h3>
+          <p class="spacer-small">Because we do not know about operating costs in order to calculate an accurate
+            profit margin, I made a guess of a 30% Profit/Sales ratio as a measure of profitability.
+          </p> -->
+        <!-- profit/sales > 30% pie -->
+        <!-- <div class="image-container">
+            <img src="images\superstore\profsales_30_pie.png" alt="" class="proj-img">
+          </div>
+          <p class="spacer-small">The business appears to be largely unprofitable at
+            70% of total orders having a Profit/Sales of less than 30%.
+          </p> -->
+
+        <!-- <h3>What percentage of total orders are discounted?</h3> -->
+        <!-- % discounted pie -->
+        <!-- <div class="image-container">
+            <img src="images\superstore\disc_pie.png" alt="" class="proj-img">
+          </div>
+          <p class="spacer-small">The business has offered a high number of discounts at
+            43% of all orders having a discount of some percent.
+          </p>
+
+          <h3>Orders with discounts are largely unprofitable</h3> -->
+        <!-- profitable discounted 30% profit/sales -->
+        <!-- <div class="image-container">
+            <img src="images\superstore\profsales_disc_30_pie.png" alt="" class="proj-img">
+          </div>
+          <p class="spacer-small">Using the previous criteria of Profit/Sales > 30%, the business appears
+            to
+          </p> -->
+
+
+        <h2>Analyzing total sales and profit by discount percentage</h2>
+        <h3>Count by discount percentage</h3>
+        <!-- discount percentage distribution -->
+        <div class="image-container">
+          <img src="images\superstore\discount_dist.png" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">The business offers a wide range of discount percentages ranging
+          from 7 to 85%. A surprising number of those discounts are 40% and above. This likely contributes to the
+          low profitability of the business.</p>
+        <h3>Sales by discount percentage</h3>
+        <!-- sales by discount percentage -->
+        <div class="image-container">
+          <img src="images\superstore\sales_discount_dist.png" alt="" class="proj-img">
+        </div>
+
+        <h3>Profit by discount percentage</h3>
+        <!-- profit by discount percentage -->
+        <div class="image-container">
+          <img src="images\superstore\prof_discount_dist.png" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">The only profitable discounts are between the 7-20% level, with 7% corresponding
+          to both the highest sales and profit.
+        </p>
+
+        <h3>What proportion of orders by discount percentage are truly profitable?
+        </h3>
+
+        <!-- 30% profit/sales ratio -->
+        <div class="image-container">
+          <img src="images\superstore\profsales_30_dist.png" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">Displaying the Profit/Sales ratio > 30% as a function of discount percentage
+          further highlights how detrimental a large quantity of high discount percentages has been to this
+          business.
+        </p>
+
+        <h2>Time series analysis of sales, profit, and discounts</h2>
+        <h3>Has the increased number of discounts given correspond to an increase in orders?</h3>
+        <!-- number of discounts and orders time series -->
+        <div class="image-container">
+          <img src="images\superstore\num_timeseries.png" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">The number of monthly discounts and orders display similar trends of increasing
+          throughout
+          the year. There also appears to be a cyclical pattern, with spikes in June, September, and November.
+        </p>
+
+        <p class="spacer-small">The fact that both the average orders and average number of discounts provided
+          almost doubled in amount from 2011 to 2014 further supports the idea that an increase in provided
+          discounts
+          likely leads to an increase in orders.</p>
+        <h3>Has an increase in the number of unique orders translated to an increase in sales and profit from
+          2011-2014?
+        </h3>
+        <!-- sales and profit time series -->
+        <div class="image-container">
+          <img src="images\superstore\sales_prof_timeseries.png" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">The trend of sales amount per month is similar to that of the number of discounts
+          and
+          orders.
+          However, profit has remained relatively stagnant average sales more than doubling from 2011-2014.
+        </p>
+
+        <!-- cummulative orders per month based on highest absolute value profit -->
+        <div class="image-container">
+          <img src="images\superstore\absval_disc_month.png" alt="" class="proj-img">
+        </div>
+
+        <!-- cummulative profit per month based on highest absolute value profit -->
+        <div class="image-container">
+          <img src="images\superstore\cummuprof_disc_month.png" alt="" class="proj-img">
+        </div>
+
+        <h3>Sales and profit probability</h3>
+
+        <!-- probability calculation of sales >=$50 at 10% discount -->
+        <div class="image-container">
+          <img src="images\superstore\prob_sales_50.png" alt="" class="proj-img">
+        </div>
+
+        <!-- probability calculation of profit >=$20 at 10% discount-->
+        <div class="image-container">
+          <img src="images\superstore\prob_profit_20.png" alt="" class="proj-img">
+        </div>
+
+
+        <h2>How well can we predict profit as a function of sales by grouped discount percentages?</h2>
+        <p class="spacer-small">Offering timely and cost effective (?) discounts is a critical aspect of
+          running a successful business. Unfortunately, this business has suffered from several low-profit years of
+          operation
+          despite an increase in sales over time.
+        </p>
+
+        <p class="spacer-small">With linear regression, we can attempt to predict profit as a function of sales,
+          while also grouping by discount percentage.
+        </p>
+
+        <!-- discount bracket linear regression -->
+        <div class="image-container">
+          <img src="images\superstore\saleprof_disc_lr.png" alt="" class="proj-img">
+        </div>
+
+        <p class="spacer-small"></p>
+
+
+        <h2>Is the increase in sales associated with discounts statistically significant?
+        </h2>
+        <p class="spacer-small"></p>
+        <!-- sales distribution -->
+        <!-- <div class="image-container">
+            <img src="images\superstore\sales.png" alt="" class="proj-img">
+          </div> -->
+        <!-- log10 transformation -->
+        <!-- <div class="image-container">
+            <img src="images\superstore\log10_sales.png" alt="" class="proj-img">
+          </div> -->
+        <h3>Groups for sales 1 sample t-test</h3>
+        <p class="spacer-small">The sales distribution was log normalized prior to the t-test.</p>
+        <!-- sales group info -->
+        <div class="image-container">
+          <img src="images\superstore\sales_groups.PNG" alt="" class="proj-img">
+        </div>
+
+        <h3>Sales t-test results</h3>
+        <!-- sales t-test results -->
+        <div class="image-container">
+          <img src="images\superstore\sales_ttest.PNG" alt="" class="proj-img">
+        </div>
+        <!-- <p class="spacer-small">A t-value outside of the lower and upper quantiles indicates statistical
+          significance.
+        </p>
+        <p class="spacer-small">A p-value less than 0.5 further supports that the increase in sales associated with
+          discounts
+          is statistically significant.
+        </p>
+        <p class="spacer-small"><u>Mean difference</u> = population mean - sample mean</p>
+        <p class="spacer-small">In this context, a negative mean difference is desirable.</p> -->
+        <p class="spacer-small">7-20% discount do indeed lead to an increase in sales overall and in 2014, the highest
+          sales year.</p>
+
+        <h2>Most importantly, are discounts also leading to an increase in profit?</h2>
+        <p class="spacer-small">The profit distribution is already approximately normal so no transformation was
+          necessary.</p>
+
+        <h3>Groups for profit 1 sample t-test</h3>
+        <!-- profit t-test groups -->
+        <div class="image-container">
+          <img src="images\superstore\profit_groups.PNG" alt="" class="proj-img">
+        </div>
+
+        <h3>Profit t-test results</h3>
+        <!-- profit t-test results -->
+        <div class="image-container">
+          <img src="images\superstore\profit_ttest.PNG" alt="" class="proj-img">
+        </div>
+        <p class="spacer-small">7-20% discount do indeed lead to an increase in profit overall and in 2014, the highest
+          sales year.</p>
+        <p class="spacer-small">However, profit has still been stagnant for this business, in part due to the large
+          number of >20% discounts offered.</p>
+
+      </div>
+      <p></p>
+      <p class="spacer-small">See the full project on my <u><a
+            href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
+            <i class="fa-solid fa-up-right-from-square"></i></a></u>
+      </p>
+    </div>
+    <!-- to top -->
+    <div>
+      <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
+          arrow_upward
+        </span></button>
+    </div>
+    </div>
+  </main>
+
+  <script src="/js/script.js"></script>
+
+</body>
+
+</html>
