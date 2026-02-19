@@ -32,7 +32,6 @@
             <li><a href="all_projects.html">Projects</a></li>
           </ul>
         </div>
-
       </div>
       <div class="ham-menu">
         <span class="material-symbols-outlined">menu
@@ -45,8 +44,8 @@
           <li><a href="all_projects.html">Projects</a></li>
         </ul>
       </div>
-
     </div>
+
     <div class="main-bar">
       <!-- contact links -->
       <div class="links">
@@ -67,72 +66,96 @@
 
       <!-- dark mode toggle -->
       <!-- <div class="slider-div">
-    <input type="checkbox" id="check">
-    <label for="check" class="slider"></label>
-  </div> -->
+      <input type="checkbox" id="check">
+      <label for="check" class="slider"></label>
+      </div> -->
       <div class="section-project">
         <div class="proj-intro">
-          <h1>Project name</h1>
+          <h1>Database design with SQLAlchemy and MySQL</h1>
           <!-- featured image -->
           <div class="image-container">
-            <img src="#" alt="" class="proj-img">
+            <img src="images\database\dbSchema_img.png" alt="" class="proj-img">
           </div>
           <!-- description -->
-          <p class="spacer-small"><b>Objective: </b></p>
-          <p class="spacer-small"><b>Results: </b></p>
-          <p class="spacer-small"><b>Future steps:</b></p>
-          <p class="spacer-small"><b>Language: </b></p>
+          <p class="spacer-small"><b>Objective: </b>Normalize a database to reduce redundancy and improve query efficiency</p>
+          <p class="spacer-small"><b>Results: </b>Turned the database into 6 tables 
+            normalized to the fourth normal form (4NF) and created audit tables to track changes</p>
+          <p class="spacer-small"><b>Languages: </b>Python, SQL</p>
           <p class="spacer-small"><b>Tools: </b></p>
-          <p class="spacer-small"><b>Methods: </b>
+          <p class="spacer-small">&emsp;<u>Jupyter notebooks:</u>
+              <ul>
+                <li>SQLAlchemy</li>
+                <li>Pandas</li>
+              </ul>
+          </p>
+          <p class="spacer-small">&emsp;<u>MySQL Workbench</u></p>
+          <p></p>
+          <p class="spacer-small"><b>Methods: </b> </p>
+          <p class="spacer-small">
+            Python:
             <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+              <li>UUID4 in to generate unique user ids for 92 customers</li>
+              <li>Merging dataframes with Pandas</li>
+              <li>Lambda function and apply() to calculate total sales over 2,823 rows</li>
+            </ul>
+            MySQL:
+            <ul>
+              <li>Recursive common table expressions </li>
+              <li>Window functions to sum total sales over individual orders</li>
+              <li>Stored procedures to summarize the sales for the most recent year and most recent month</li>
+              <li>Database triggers to track updates in product MSRP and customer address</li>
             </ul></p>
           <p class="spacer-small"><b>Data set: </b>sourced from <u><a
-                  href=#></a></u>
+            href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data">kaggle</a></u>
               <ul>
-                <li>number of data points</li>
+                <li>2,823 records</li>
               </ul>
           </p>
           <p></p>
         </div>
-        <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-              <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-          indepth look!
+        <p class="spacer-small">See the full project on my <u><a href="https://github.com/mia-flo/database_design" target="_blank">github
+              <i class="fa-solid fa-up-right-from-square"></i></a></u>
         </p>
-        <!-- featured image -->
+        <h2>Database normalization to 4NF</h2>
         <div class="image-container">
-          <img src="" alt="" class="proj-img">
+          <img src="images\database\original.png" alt="" class="proj-img">
+        </div>
+
+        <p>The large, 25 column table was broken down into smaller, more manageable tables.
+        </p>
+
+        <p>To improve query efficiency and reduce redundancy:</p>
+        <ul>
+          <li>created unique customer and address ids</li>
+          <li>dropped the deal-size column</li>
+          <li>used SQLAlchemy in Jupyter notebooks to organize the data into 6 tables</li>
+        </ul>
+
+        <div class="image-container">
+          <img src="images\database\dbSchema_img.png" alt="" class="proj-img">
         </div>
 
 
-        <h2>what it's about forreal</h2>
-        <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-          here</p>
-        <!-- figure -->
+        <h2>Stored procedures</h2>
+        <p>summary of sales and units for the most recent year and month of orders</p>
+        <p>customer summary for the USA based customers, the largest market</p>
+        <p>unshipped orders</p>
+
         <div class="image-container">
-          <img src="" alt="" class="proj-img">
+          <img src="images\database\month_procedure.png" alt="" class="proj-img">
         </div>
-        <h2>what it's about forreal</h2>
-        <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-          here</p>
-        <!-- figure -->
+
+        <h2>Database triggers</h2>
         <div class="image-container">
-          <img src="" alt="" class="proj-img">
+          <img src="images\database\msrp_trigger.png" alt="" class="proj-img">
         </div>
-        <h2>what it's about forreal</h2>
-        <p class="spacer-xlarge">description goes heredescription goes heredescription goes heredescription goes
-          here
-        </p>
-        <!-- figure -->
-        <div class="image-container">
-          <img src="" alt="" class="proj-img">
-        </div>
-        <p class="spacer-small">See the full project on my <u><a href="#" target="_blank">github
-              <i class="fa-solid fa-up-right-from-square"></i></a></u></p>
+        <p>After update trigger to update product MSRP and track the changes in an audit table</p>
+        <p>After update trigger to update customer address and track the changes in an audit table</p>
+
+        <p></p>
+        <p class="spacer-small">See the full project on my <u><a
+                    href="https://github.com/mia-flo/database_design" target="_blank">github
+                    <i class="fa-solid fa-up-right-from-square"></i></a></u></p>
       </div>
 
       <!-- to top -->
@@ -141,7 +164,7 @@
             arrow_upward
           </span></button>
       </div>
-    </div>
+    
     </div>
   </main>
 

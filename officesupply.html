@@ -25,11 +25,14 @@
     <!-- navigation -->
     <div class="navigation">
       <div class="sidebar-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="all_projects.html">Projects</a></li>
-        </ul>
+        <div class="menu-container">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="all_projects.html">Projects</a></li>
+          </ul>
+        </div>
+
       </div>
       <div class="ham-menu">
         <span class="material-symbols-outlined">menu
@@ -51,10 +54,10 @@
         <section>
           <ul class="nav-out">
             <li class="contact-link"><a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </li>
             <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i>github</a></li>
+                <i class="fa-brands fa-github"></i> github</a></li>
             <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
             <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
         </li> -->
@@ -71,33 +74,58 @@
 
       <div class="section-project">
         <div class="proj-intro">
-          <!-- description -->
           <h1>Analysis of the relationship between profit and sales vs
             discounts for a global office supply company</h1>
           <!-- featured image -->
           <div class="image-container">
             <img src="images\superstore\sales_prof_timeseries.png" alt="" class="proj-img">
           </div>
-          <p class="spacer-small"><b>Objective: </b><br>1. To explore the impact of discounts on sales and profit
-            for a <br>2. To determine what percentages of discounts were associated with increased profit</p>
-          <p class="spacer-small"><b>Language: </b>Python</p>
-          <p class="spacer-small"><b>Methods: </b><br>-time series analysis of revenue and profit<br>-linear
-            regression<br>
-            -probability calculation for a given dollar amount at a specified discount percentage<br>
-            -1 sample t-tests to determine whether the impact of discounted sales were statisticall significant</p>
-          <p class="spacer-small"><b>Tools: </b>Pandas, Numpy, Math, Seaborn, Matplotlib, SciPy, Scikit-Learn</p>
+          <!-- description -->
+          <p class="spacer-small"><b>Objective: </b>
+            <ol>
+              <li>To explore the impact of discounts on sales and profit
+                for a </li>
+              <li>To determine what percentages of discounts were associated with increased profit</li>
+            </ol>
+          </p>
           <p class="spacer-small"><b>Results: </b>Discounts at the 7-20% level are associated with a statistically
             significant
-            increase in both sales and profit. </p>
+            increase in both sales and profit.</p>
+          <p class="spacer-small"><b>Language: </b>Python</p>
+          <p class="spacer-small"><b>Tools: </b>
+            <ul>
+              <li>Pandas</li>
+              <li>Numpy</li>
+              <li>Math</li>
+              <li>Seaborn</li>
+              <li>Matplotlib</li>
+              <li>SciPy</li>
+              <li>Scikit-Learn</li>
+            </ul>
+          </p>
+          <p class="spacer-small"><b>Methods: </b>
+            <ul>
+              <li>Time series analysis of revenue and profit</li>
+              <li>Linear regression</li>
+              <li>Probability calculation for a given dollar amount at a specified discount percentage</li>
+              <li>1 sample t-tests to determine whether the impact of discounted sales were statistically significant</li>
+            </ul>
+          </p>
+
           <p class="spacer-small"><b>Data set: </b>sourced from <u><a
-                href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset">kaggle</a></u> - 51,290
-            records over 147 countries and 1,590 customers</p>
+                href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset">kaggle</a></u>
+            <ul>
+              <li>51,290 records</li>
+              <li>47 countries</li>
+              <li>1,590 customers</li>
+            </ul>
+          </p>
           <p></p>
         </div>
         <p class="spacer-small">See the full project on my <u><a
               href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
               <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-          indepth look!
+          in depth look!
         </p>
 
         <!-- <h3>How many orders have a Profit/Sales ratio > 30%</h3>

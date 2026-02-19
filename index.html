@@ -1,202 +1,254 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="preload" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="author" content="Mia Flores and A Passage Forms" />
+    <meta
+      name="keywords"
+      content="data analysis, python, sql, data exploration, data visualization"
+    />
+    <title>Mia Flores - Data Analyst</title>
+    <meta
+      name="description"
+      content="Mia Flores - problem solving using data"
+    />
+    <link rel="shortcut icon" href="/images/apffavicon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="author" content="Mia Flores and A Passage Forms">
-  <meta name="keywords" content="data analysis, python, sql, data exploration, data visualization">
-  <title>Mia Flores - Data Analyst</title>
-  <meta name="description" content="Mia Flores - problem solving using data">
-  <link rel="shortcut icon" href="/images/apffavicon.png">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
-
-<body>
-
-
-  <!-- main -->
-  <main>
-    <!-- navigation -->
-    <div class="navigation">
-      <div class="sidebar-menu">
-        <ul>
-          <li class="active-page"><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="all_projects.html">Projects</a></li>
-          <!-- <li><a href="project_template.html">Template</a></li> -->
-        </ul>
+  <body>
+    <!-- main -->
+    <main>
+      <!-- navigation -->
+      <div class="navigation">
+        <div class="sidebar-menu">
+          <div class="menu-container">
+            <ul>
+              <li class="active-page"><a href="#">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="all_projects.html">Projects</a></li>
+              <!-- <li><a href="project_template.html">Template</a></li> -->
+            </ul>
+          </div>
+        </div>
+        <div class="ham-menu">
+          <span class="material-symbols-outlined">menu </span>
+        </div>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="all_projects.html">Projects</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="ham-menu">
-        <span class="material-symbols-outlined">menu
-        </span>
-      </div>
-      <div class="off-screen-menu">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="all_projects.html">Projects</a></li>
-        </ul>
-      </div>
 
-    </div>
-
-
-    <div class="main-bar">
-      <!-- contact links -->
-      <div class="links">
-        <section>
-          <ul class="nav-out">
-            <li class="contact-link"><a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-            </li>
-            <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i>github</a>
-            </li>
-            <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
+      <div class="main-bar">
+        <!-- contact links -->
+        <div class="links">
+          <section>
+            <ul class="nav-out">
+              <li class="contact-link">
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li class="contact-link">
+                <a
+                  href="https://github.com/mia-flo?tab=repositories"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i> github</a
+                >
+              </li>
+              <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
                 target="_blank">
                 <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
             </li> -->
-          </ul>
-        </section>
-        <section class="line"></section>
-      </div>
+            </ul>
+          </section>
+          <section class="line"></section>
+        </div>
 
-      <!-- dark mode toggle -->
-      <!-- <div class="slider-div">
+        <!-- dark mode toggle -->
+        <!-- <div class="slider-div">
         <input type="checkbox" id="check">
         <label for="check" class="slider"></label>
       </div> -->
 
-
-
-      <!-- main intro -->
-      <div class="main-text-container">
-        <h1>Mia Flores</h1>
-        <h3>Data Analyst - seeking employment</h3>
-        <p>I have a strong curiousity, enjoy problem solving, and consider myself a life-long student</p>
-      </div>
-
-
-      <!-- featured projects -->
-      <h1 class="section-header"><u>Featured Projects</u></h1>
-
-      <div class="feat-projects">
-        <div class="row1">
-          <!-- superstore -->
-          <section class="col1">
-            <div class="project-card">
-              <div class="image-container-home">
-                <img class="img-cover" src="images\superstore\sales_prof_timeseries.png" alt="">
-              </div>
-              <section class="tag-container-home">
-                <p class="tag">Python</p>
-                <p class="tag">Data Analysis</p>
-              </section>
-              <section class="text-container-home">
-                <h3 class="title-home">Analysis of the relationship between profit, sales, and discounts for a global
-                  office supplier
-                </h3>
-                <p class="proj-text">Determined what proportion of orders were profitable and the optimal
-                  discount percentages for maximizing both sales and profit for a company that saw a ~2x
-                  increase in sales but stagnant profit from 2011-2014.
-                </p>
-              </section>
-              <section>
-                <a href="officesupply.html" class="project-link"><button class="button">View Project</button></a>
-              </section>
-            </div>
-          </section>
-
-          <!-- customer segmentation -->
-          <section class="col2">
-            <div class="project-card">
-              <div class="image-container-home">
-                <img class="img-cover" src="images\customers\customer_hist.png" alt="">
-              </div>
-              <section class="tag-container-home">
-                <p class="tag">Python</p>
-                <p class="tag">SQL</p>
-                <p class="tag">Data Analysis</p>
-              </section>
-              <section class="text-container-home">
-                <h3 class="title-home">Customer segmentation analysis based on purchase history</h3>
-                <p class="proj-text">Grouped customers into regular, return, new, and one-time customers based on their
-                  purchasing behavior.
-                </p>
-              </section>
-              <section>
-                <a href="customers.html" class="project-link"><button class="button">View Project</button></a>
-              </section>
-            </div>
-          </section>
+        <!-- main intro -->
+        <div class="main-text-container">
+          <h1>Mia Flores</h1>
+          <h3>San Francisco, CA</h3>
+          <h3>Data Analyst - open to work</h3>
+          <p>
+            I'm curious about the world, enjoy challenges, and am a life long
+            student
+          </p>
         </div>
 
+        <!-- featured projects -->
+        <h1 class="section-header"><u>Featured Projects</u></h1>
 
-        <div class="row2">
-          <!-- movies -->
-          <section class="col1">
-            <div class="project-card">
-              <div class="image-container-home">
-                <img class="img-cover" src="images\movie\gross_actual_pred.png" alt="">
+        <div class="feat-projects">
+          <div class="row1">
+            <!-- superstore -->
+            <section class="col1">
+              <div class="project-card">
+                <div class="image-container-home">
+                  <img
+                    class="img-cover"
+                    src="images\superstore\sales_prof_timeseries.png"
+                    alt=""
+                  />
+                </div>
+                <section class="text-container-home">
+                  <h3 class="title-home">
+                    Analysis of the relationship between profit, sales, and
+                    discounts for a global office supplier
+                  </h3>
+                  <section class="tag-container-home">
+                    <p class="tag">Python</p>
+                    <p class="tag">Data Analysis</p>
+                  </section>
+                  <p class="proj-text">
+                    Determined the optimal discount percentages for maximizing
+                    both sales and profit for a company that saw a ~2x increase
+                    in sales but stagnant profit from 2011-2014.
+                  </p>
+                </section>
+                <section>
+                  <a href="officesupply.html" class="project-link"
+                    ><button class="button">View Project</button></a
+                  >
+                </section>
               </div>
-              <section class="tag-container-home">
-                <p class="tag">Python</p>
-                <p class="tag">Data Analysis</p>
-                <p class="tag">Machine Learning</p>
-              </section>
-              <section class="text-container-home">
-                <h3 class="title-home">Predicting film gross with multiple linear regression in Python</h3>
-                <p class="proj-text">Cleaned/prepared data and trained a model to predict film gross based on
-                  multiple variables such as budget, genre, rating, etc.</p>
-              </section>
-              <a href="movie.html" class="project-link"><button class="button">View Project</button></a>
-            </div>
-          </section>
+            </section>
 
-          <!-- weather forecast -->
-          <section class="col2">
-            <div class="project-card">
-              <div class="image-container-home">
-                <img class="img-cover alternate-fit" src="images\tokyo weather\max_pred.png" alt="">
+            <!-- customer segmentation -->
+            <section class="col2">
+              <div class="project-card">
+                <div class="image-container-home">
+                  <img
+                    class="img-cover"
+                    src="images\customers\customer_hist.png"
+                    alt=""
+                  />
+                </div>
+                <section class="text-container-home">
+                  <h3 class="title-home">
+                    Customer segmentation analysis based on purchase history
+                  </h3>
+                  <section class="tag-container-home">
+                    <p class="tag">Python</p>
+                    <p class="tag">SQL</p>
+                    <p class="tag">Data Analysis</p>
+                  </section>
+                  <p class="proj-text">
+                    Grouped customers into regular, return, new, and one-time
+                    customers based on their purchasing behavior for an
+                    international retailer.
+                  </p>
+                </section>
+                <section>
+                  <a href="customers.html" class="project-link"
+                    ><button class="button">View Project</button></a
+                  >
+                </section>
               </div>
-              <section class="tag-container-home">
-                <p class="tag">Python</p>
-                <p class="tag">Data Analysis</p>
-                <p class="tag">Machine Learning</p>
-              </section>
-              <section class="text-container-home">
-                <h3 class="title-home">Forecasting Tokyo's daily max temperature with XGBoost</h3>
-                <p class="proj-text">Predicted the maximum daily temperature from 2024-2027 using XGBoost's regressor.
-                </p>
-              </section>
-              <section>
-                <a href="weather.html" class="project-link"><button class="button">View Project</button></a>
-              </section>
-            </div>
-          </section>
+            </section>
+          </div>
+
+          <div class="row2">
+            <!-- movies -->
+            <section class="col1">
+              <div class="project-card">
+                <div class="image-container-home">
+                  <img
+                    class="img-cover"
+                    src="images\movie\gross_actual_pred.png"
+                    alt=""
+                  />
+                </div>
+                <section class="text-container-home">
+                  <h3 class="title-home">
+                    Predicting film gross with multiple linear regression with
+                    SKLearn in Python
+                  </h3>
+                  <section class="tag-container-home">
+                    <p class="tag">Python</p>
+                    <p class="tag">Data Analysis</p>
+                    <p class="tag">Machine Learning</p>
+                  </section>
+                  <p class="proj-text">
+                    Trained a model to predict film gross based on multiple
+                    variables such as budget, genre, rating, etc.
+                  </p>
+                </section>
+                <a href="movie.html" class="project-link"
+                  ><button class="button">View Project</button></a
+                >
+              </div>
+            </section>
+
+            <!-- weather forecast -->
+            <section class="col2">
+              <div class="project-card">
+                <div class="image-container-home">
+                  <img
+                    class="img-cover alternate-fit"
+                    src="images\tokyo weather\max_pred.png"
+                    alt=""
+                  />
+                </div>
+                <section class="text-container-home">
+                  <h3 class="title-home">
+                    Forecasting Tokyo's daily max temperature with XGBoost
+                  </h3>
+                  <section class="tag-container-home">
+                    <p class="tag">Python</p>
+                    <p class="tag">Data Analysis</p>
+                    <p class="tag">Machine Learning</p>
+                  </section>
+                  <p class="proj-text">
+                    Predicted the maximum daily temperature from 2024-2027 using
+                    XGBoost's regressor.
+                  </p>
+                </section>
+                <section>
+                  <a href="weather.html" class="project-link"
+                    ><button class="button">View Project</button></a
+                  >
+                </section>
+              </div>
+            </section>
+          </div>
         </div>
-
       </div>
-    </div>
 
-
-    <!-- scroll back to top -->
-    <div>
-      <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
-          arrow_upward
-        </span></button>
-    </div>
-
-  </main>
-  <script src="/js/script.js"></script>
-</body>
-
+      <!-- scroll back to top -->
+      <div>
+        <button class="to-top" onclick="scrollToTop()">
+          <span class="material-symbols-outlined"> arrow_upward </span>
+        </button>
+      </div>
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
 </html>

@@ -27,11 +27,13 @@
         <!-- navigation -->
         <div class="navigation">
             <div class="sidebar-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="all_projects.html">Projects</a></li>
-                </ul>
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="all_projects.html">Projects</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="ham-menu">
                 <span class="material-symbols-outlined">menu
@@ -53,10 +55,10 @@
                 <section>
                     <ul class="nav-out">
                         <li class="contact-link"><a href="#" target="_blank">
-                                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                                <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </li>
                         <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                                <i class="fa-brands fa-github"></i>github</a></li>
+                                <i class="fa-brands fa-github"></i> github</a></li>
                         <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
                                 target="_blank">
                                 <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
@@ -73,7 +75,7 @@
             </div> -->
             <div class="section-project">
                 <div class="proj-intro">
-                    <h1">Predicting Film Gross with Multivariate Linear Regression</h1>
+                    <h1>Predicting Film Gross with Multivariate Linear Regression</h1>
                         <!-- feature image -->
                         <div class="image-container">
                             <img src="images\movie\gross_actual_pred.png" alt="" class="proj-img">
@@ -82,24 +84,33 @@
                         <p class="spacer-small"><b>Objective: </b>To learn how to prepare data for and perform multiple
                             linear
                             regression for predictions</p>
-                        <p class="spacer-small"><b>Language: </b>Python</p>
-                        <p class="spacer-small"><b>Tools: </b>Jupyter notebooks: Stats, SKLearn, Scipy, statsmodels,
-                            pandas, numpy,
-                            matplotlib,
-                            seaborn</p>
-                        <p class="spacer-small"><b>Methods: </b><br>-linear regression to predict gross<br>
-                            -correlation
-                            analysis<br>
-                            -data
-                            normalization<br> -one-hot-encoding of categorical data<br> -KFold cross
-                            validation<br>-multiple
-                            linear regression
-                        </p>
-
-                        <p class="spacer-small"><b>Results: </b>Mean adjusted R2 was 0.86 while the mean cross
+                        <p class="spacer-small"><b>Results: </b>Mean adjusted R2 over 10 KFolds was 0.86 while the mean cross
                             validation
                             score was 0.85
-                            , indicating the model is relatively accurate.</p>
+                            , indicating the model is performing relatively well on the training data.</p>
+                        <p class="spacer-small"><b>Future steps:</b> Test it on a new data set that the model has not seen.</p>
+                        <p class="spacer-small"><b>Language: </b>Python</p>
+                        <p class="spacer-small"><b>Tools: </b>Jupyter notebooks:
+                            <ul>
+                                <li>Stats</li>
+                                <li>SKLearn</li>
+                                <li>SciPy</li>
+                                <li>Statsmodels</li>
+                                <li>Pandas</li>
+                                <li>Numpy</li>
+                                <li>Matplotlib</li>
+                                <li>Seaborn</li>
+                            </ul>
+                        </p>
+                        <p class="spacer-small"><b>Methods: </b>
+                            <ul>
+                                <li>Linear regression to predict gross</li>
+                                <li>Correlation analysis to determine best variables to use as predictors</li>
+                                <li>One-hot-encoding of categorical data</li>
+                                <li>KFold cross-validation</li>
+                                <li>Multiple linear regression</li>
+                            </ul>
+                        </p>
                         <p class="spacer-small"><b>Data set: </b>sourced from <u><a
                                     href="https://www.kaggle.com/datasets/danielgrijalvas/movies">kaggle</a></u> - 5,290
                             films from 1980-2020
@@ -110,7 +121,7 @@
                 <p class="spacer-small">See the full Jupyter Notebook on my <u><a
                             href="https://github.com/mia-flo/movie-correlation" target="_blank">github
                             <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-                    indepth look!
+                    in-depth look!
                 </p>
 
 

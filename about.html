@@ -1,126 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html class="preload" lang="en">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta name="author" content="Mia Flores and A Passage Forms" />
+    <meta
+      name="keywords"
+      content="data analysis, python, sql, data exploration, data visualization"
+    />
+    <title>Mia Flores - Data Analyst</title>
+    <meta name="description" content="About Mia Flores" />
+    <link rel="shortcut icon" href="/images/apffavicon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
 
-<head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="author" content="Mia Flores and A Passage Forms">
-  <meta name="keywords" content="data analysis, python, sql, data exploration, data visualization">
-  <title>Mia Flores - Data Analyst</title>
-  <meta name="description" content="About Mia Flores">
-  <link rel="shortcut icon" href="/images/apffavicon.png">
-  <link rel="stylesheet" href="/css/styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-
-
-<body>
-
-  <main>
-    <!-- navigation -->
-    <div class="navigation">
-      <div class="sidebar-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="active-page"><a href="#">About</a></li>
-          <li><a href="all_projects.html">Projects</a></li>
-        </ul>
-      </div>
-      <div class="ham-menu">
-        <span class="material-symbols-outlined">menu
-        </span>
-      </div>
-      <div class="off-screen-menu">
-        <ul>
-          <li"><a href="index.html">Home</a></li>
+  <body>
+    <main>
+      <!-- navigation -->
+      <div class="navigation">
+        <div class="sidebar-menu">
+          <div class="menu-container">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="active-page"><a href="#">About</a></li>
+              <li><a href="all_projects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="ham-menu">
+          <span class="material-symbols-outlined">menu</span>
+        </div>
+        <div class="off-screen-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="all_projects.html">Projects</a></li>
-            <li><a href="project_template.html">Template</a></li>
-        </ul>
+          </ul>
+        </div>
       </div>
 
-    </div>
-
-    <div class="main-bar">
-      <!-- contact links -->
-      <div class="links">
-        <section>
-          <ul class="nav-out">
-            <li class="contact-link"><a href="#" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-            </li>
-            <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i>github</a>
-            </li>
-            <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
+      <div class="main-bar">
+        <!-- contact links -->
+        <div class="links">
+          <section>
+            <ul class="nav-out">
+              <li class="contact-link">
+                <a href="#" target="_blank">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn</a
+                >
+              </li>
+              <li class="contact-link">
+                <a
+                  href="https://github.com/mia-flo?tab=repositories"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i> github</a
+                >
+              </li>
+              <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
             <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
         </li> -->
-          </ul>
-        </section>
-        <section class="line"></section>
-        <p class="spacer-small"><button class="resume" onclick="location.href='miaflores_resume.pdf'">Full resume</button>
-        </p>
-      </div>
+            </ul>
+          </section>
+          <section class="line"></section>
+        </div>
 
-      <!-- dark mode toggle -->
-      <!-- <div class="slider-div">
+        <!-- dark mode toggle -->
+        <!-- <div class="slider-div">
     <input type="checkbox" id="check">
     <label for="check" class="slider"></label>
   </div> -->
-      <h1 class="section-header">About Me</h1>
+        <h1 class="section-header">About Me</h1>
 
-      <div class="section-project">
-        <p class="spacer-large">My name is Mia and I am a geoscientist turned data analyst in San Francisco, CA.</p>
+        <div class="section-project">
+          <p class="spacer-large">
+            <b
+              >I'm open to work, if you'd like to chat, contact me at floresdmia
+              [@] gmail.com</b
+            >
+          </p>
 
-        <p class="spacer-large">I received my BS in the geological sciences at San Diego State University and spent
-          about 3.5 years as a PhD candidate studying geological phenomena at Stanford University.</p>
+          <p class="spacer-small center-text">
+            <button
+              class="resume"
+              onclick="location.href = 'miaflores_resume.pdf'"
+            >
+              Full resume
+            </button>
+          </p>
 
-        <p class="spacer-large">While I of course honed my techincal skills such as the collection, cleaning, and
-          analysis
-          of data, my time in academia also taught me the importance of collaboration and of developing a diverse skill
-          set.</p>
+          <p class="spacer-large">
+            My name is Mia and I'm a geoscientist turned data analyst in San
+            Francisco, CA.
+          </p>
 
-        <p class="spacer-large">Since then I have broadened my horizons through learning how to code. freeCodeCamp's
-          front-end web development
-          course (HTML, CSS, and JavaScript) was my first experience with code outside of Matlab. Adding Python and SQL
-          to my toolkit was
-          the natural next
-          step for me as I created data analysis and simple machine learning projects.</p>
+          <p class="spacer-large">
+            As a PhD candidate in the Geological Sciences at Stanford
+            University, I spent 4 years collecting, analyzing, visualizing, and
+            interpreting scientific data. Now, I am expanding my knowledge with
+            both data analysis and machine learning projects that utilize Python
+            and SQL.
+          </p>
 
-        <p class="spacer-large">Through these projects I am continuing to hone my skills in analyzing and interpreting
-          data. I also intend to improve my existing machine learning projects as well as explore more machine learning
-          techniques and algorithms.
+          <p class="spacer-large">
+            I have a lifelong passion for learning and bring a diverse skill
+            set, communication skills, as well as experience making data-driven
+            decisions.
+          </p>
 
-        </p>
+          <p class="spacer-large">
+            Outside of work, my recent hobbies are indoor bouldering, learning
+            Japanese, and playing video games.
+          </p>
 
-        <p class="spacer-large"><b>My current goals: </b>improve in statistics and mathematics</p>
+          <p class="spacer-large">
+            <b>My current learning goals: </b>improve in statistics and
+            mathematics
+          </p>
 
-        <p class="spacer-large"><b>Current personal project: </b>webscraping WNBA data in Python using
-          BeautifulSoup4</p>
+          <p class="spacer-large"><b>Current personal project: </b></p>
 
-        <p class="spacer-large">Check out the <u><a href="all_projects.html">project page</a></u> or my <u><a
-              href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
-              <i class="fa-solid fa-up-right-from-square"></i></a></u> to learn more about some of my personal
-          projects.</p>
+          <p class="spacer-small">
+            Check out the <u><a href="all_projects.html">project page</a></u> or
+            my
+            <u
+              ><a
+                href="https://github.com/mia-flo?tab=repositories"
+                target="_blank"
+                >github <i class="fa-solid fa-up-right-from-square"></i></a
+            ></u>
+            to learn more about some of my personal projects.
+          </p>
+          <p></p>
+        </div>
+
+        <!-- to top -->
+        <div>
+          <button class="to-top" onclick="scrollToTop()">
+            <span class="material-symbols-outlined"> arrow_upward </span>
+          </button>
+        </div>
       </div>
-
-    </div>
-    <!-- back to top button -->
-    <div>
-      <button class="to-top" onclick="scrollToTop()"><span class="material-symbols-outlined">
-          arrow_upward
-        </span></button>
-    </div>
-
-  </main>
-  <script src="/js/script.js"></script>
-
-
-</body>
-
+    </main>
+    <script src="/js/script.js"></script>
+  </body>
 </html>
