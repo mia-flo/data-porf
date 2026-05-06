@@ -58,7 +58,7 @@
                                 <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </li>
                         <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                                <i class="fa-brands fa-github"></i> github</a></li>
+                                <i class="fa-brands fa-github"></i> GitHub</a></li>
                         <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
                                 target="_blank">
                                 <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
@@ -80,17 +80,25 @@
                         <div class="image-container">
                             <img src="images\movie\gross_actual_pred.png" alt="" class="proj-img">
                         </div>
+                        <!-- tags -->
+                        <section class="tag-container left">
+                            <p class="tag-proj">Data Analysis</p>
+                            <p class="tag-proj">Machine Learning</p>
+                            <p class="tag-proj">Python</p>
+                        </section>
                         <!-- description -->
-                        <p class="spacer-small"><b>Objective: </b>To learn how to prepare data for and perform multiple
-                            linear
-                            regression for predictions</p>
-                        <p class="spacer-small"><b>Results: </b>Mean adjusted R2 over 10 KFolds was 0.86 while the mean cross
-                            validation
-                            score was 0.85
-                            , indicating the model is performing relatively well on the training data.</p>
-                        <p class="spacer-small"><b>Future steps:</b> Test it on a new data set that the model has not seen.</p>
-                        <p class="spacer-small"><b>Language: </b>Python</p>
-                        <p class="spacer-small"><b>Tools: </b>Jupyter notebooks:
+                        <p class="spacer-small"><b><u>Objective:</u> </b>To learn how to prepare data for and perform <b>
+                            multiple
+                                linear
+                                regression for predictive modeling
+                        </b></p>
+                        <p class="spacer-small"><b><u>Results:</u> Mean adjusted R2 over 10 KFolds was <u>0.86</u>, and the mean 
+                            cross validation score was 0.85,
+                             indicating the model is performing relatively well on the training data.</b></p>
+                        <p class="spacer-small"><b><u>Future steps:</u></b> Test it on a new data set that the model has not seen.</p>
+                        <p class="spacer-small"><b><u>Language:</u> </b><u>Python</u></p>
+                        <p class="spacer-small"><b><u>Tools:</u> </b><br>
+                            <u>Jupyter notebooks:</u>
                             <ul>
                                 <li>Stats</li>
                                 <li>SKLearn</li>
@@ -102,24 +110,24 @@
                                 <li>Seaborn</li>
                             </ul>
                         </p>
-                        <p class="spacer-small"><b>Methods: </b>
+                        <p class="spacer-small"><b><u>Methods:</u> </b>
                             <ul>
-                                <li>Linear regression to predict gross</li>
-                                <li>Correlation analysis to determine best variables to use as predictors</li>
-                                <li>One-hot-encoding of categorical data</li>
-                                <li>KFold cross-validation</li>
-                                <li>Multiple linear regression</li>
+                                <li><b>Linear regression</b> to predict gross</li>
+                                <li><b>Correlation analysis</b> to determine best variables to use as predictors</li>
+                                <li><b>One-hot-encoding</b> of categorical data</li>
+                                <li><b>KFold cross-validation</b></li>
+                                <li><b>Multiple linear regression</b></li>
                             </ul>
                         </p>
-                        <p class="spacer-small"><b>Data set: </b>sourced from <u><a
-                                    href="https://www.kaggle.com/datasets/danielgrijalvas/movies">kaggle</a></u> - 5,290
-                            films from 1980-2020
+                        <p class="spacer-small"><b><u>Data set:</u> </b>sourced from <u><a
+                                    href="https://www.kaggle.com/datasets/danielgrijalvas/movies">kaggle</a></u> - <b>5,290</b>
+                            films from <b>1980-2020</b>
                         </p>
                         <p></p>
                 </div>
                 <!-- link to project on github -->
-                <p class="spacer-small">See the full Jupyter Notebook on my <u><a
-                            href="https://github.com/mia-flo/movie-correlation" target="_blank">github
+                <p class="spacer-small">See the full <u><a href="https://github.com/mia-flo/movie-correlation/blob/main/.ipynb_checkpoints/movies-checkpoint.ipynb" target="_blank">Jupyter Notebook</a></u> on my <u><a
+                            href="https://github.com/mia-flo/" target="_blank">GitHub
                             <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
                     in-depth look!
                 </p>
@@ -140,12 +148,15 @@
                     have increased over the years, the rate of increase of gross has been exponential compared to
                     budget.
                 </p>
+                <p></p>
 
                 <p class="spacer-small">Around the early 2000s budget began to stagnate despite the exponential
                     rise in film gross.
                 </p>
 
-                <h2>Breaking down the astronomical increase in film gross</h2>
+                <h2>Breaking down film gross by genre and rating to understand which types
+                    of movies are most popular 
+                </h2>
 
                 <h3>Genre vs Gross</h3>
 
@@ -155,12 +166,8 @@
                     <img src="images\movie\genre_gross.png" alt="Stripplot of genre vs gross. Action, animation,
                         and adventure are generally the most popular and highest grossing." class="proj-img">
                 </div>
-                <p class="spacer-small">
-                    Stripplots are very helpful in visualizing the gross and a visual estimate of the number of films by
-                    genre.
-                </p>
-                <p class="spacer-small">We can see that the highest grossing films appear to
-                    be action, animation, and adventure. They not only make the most money, but appear
+                <p class="spacer-small">We can see that the <b>highest grossing</b> films appear to
+                    be <u>action, animation, and adventure</u>. They not only make the most money, but appear
                     to also be the most common genres of film.
                 </p>
                 <h3>Rating vs Gross</h3>
@@ -169,46 +176,41 @@
                     <img src="images\movie\rating_gross.png" alt="Stripplot of rating vs gross. PG13, PG,
                         and R are generally the most popular and highest grossing." class="proj-img">
                 </div>
-                <p class="spacer-small">In terms of rating, PG-13, PG, and rated R appear to gross the highest and
+                <p class="spacer-small">In terms of rating, <u>PG-13, PG, and rated R</u> appear to gross the highest and
                     account for the majority of films.
-                </p>
-
-                <p class="spacer-small">PG-13 and PG being at the top of the list makes
-                    sense - a film that is accessible to a larger audience
-                    has the potential to make a lot of money.
                 </p>
 
                 <h2>Which numerical variables appear to have a relationship with gross?</h2>
                 <h3>Kendall correlation of numeric features</h3>
                 <p class="spacer-small"></p>
-                <p class="spacer-small">A correlation matrix calculated using Kendall tau correlation and plotted
-                    with Seaborn. I decided to use Kendall tau because (1) the nonnormality of the distributions
-                    and (2) the relationship between budget and gross appears to be more monotonic rather than
-                    simply linear.
-                </p>
 
-                <p class="spacer-small">Interpretation of the correlation coefficient were based on <u>
-                        <a href="https://blogs.sas.com/content/iml/2023/04/05/interpret-spearman-kendall-corr.html">Schober,
-                            Boer, and Schwarte (2018)'s suggestions</a></u>.
-                </p>
+
 
                 <!-- figure - correlation matrix -->
                 <div class="image-container">
                     <img src="images\movie\movie_corr.png" alt="Pearnson correlation matrix" class="proj-img">
                 </div>
+                <p></p>
 
-
-                <p class="spacer-small">Gross and votes have a positive, strong correlation (+0.55)</p>
-                <p class="spacer-small">Gross and budget have a positive, strong correlation (+0.51)</p>
-
-                <h2>Predicting gross via simple linear regression</h2>
-                <p class="spacer-small">Now that we know which variables appear to have a relationship
-                    with gross, how well can we predict a film's gross using budget and audience votes as the
-                    predictor variables?
+                <p class="spacer-small">Interpretation of the correlation coefficient were based on <u>
+                        <a href="https://blogs.sas.com/content/iml/2023/04/05/interpret-spearman-kendall-corr.html">Schober,
+                            Boer, and Schwarte (2018)'s suggestions</a></u>.
                 </p>
+                <p></p>
+                <p class="spacer-small"><b>Gross and votes have a positive, strong correlation (+0.55)</b></p>
+                <p class="spacer-small"><b>Gross and budget have a positive, strong correlation (+0.51)</b></p>
+
+                <h2>Quantifying how much of the variation in gross is due to different variables</h2>
+                <p class="spacer-small">Now that we know which variables appear to have a relationship
+                    with gross, how well <b>
+                        can we predict a film's gross using budget and audience votes as the
+                        predictor variables
+                    </b>?
+                </p>
+                <p></p>
                 <p class="spacer-small">
-                    We can plot a simple linear regression using Seaborn's regplot and calculate R squared from
-                    statsmodels' OLS
+                    We can plot a <b>simple linear regression</b> using <b>Seaborn's regplot</b> and calculate R squared from
+                    <b>statsmodels' OLS</b>
                     (ordinary least squares).
                 </p>
 
@@ -216,7 +218,7 @@
                 <div class="image-container">
                     <img src="images\movie\budge_gross_reg.png" alt="" class="proj-img">
                 </div>
-                <p class="spacer-small">Budget accounts for roughly 55% of the variation in gross. While not always the
+                <p class="spacer-small"><u>Budget</u> accounts for roughly <b>55%</b> of the variation in <u>gross</u>. While not always the
                     case,
                     a well-funded movie will see better returns on the investment.
                 </p>
@@ -225,17 +227,18 @@
                     <img src="images\movie\votes_gross_reg.png" alt="" class="proj-img">
                 </div>
 
-                <p class="spacer-small">Audience votes accounts for around 38% of the variation in gross. On IMDd,
+                <p class="spacer-small">Audience votes accounts for around <b>38%</b> of the variation in gross. On IMDb,
                     users cast a vote from 1-10, with 10 being the highest rating. A score is given to the film
                     by aggregating all votes from users. The exact calculation used in unknown but IMDb reportedly
                     uses a weighted calculation rather than a pure average.
                 </p>
+                <p></p>
 
                 <p class="spacer-small">Because it was unclear to me how score and votes differ, I chose
                     the more highly correlated votes as an independent variable.
                 </p>
 
-                <h2>Preparing the data with SKLearn</h2>
+                <h2>Preparing the data with for multiple linear regression</h2>
                 <h3>Normalizing the data</h3>
                 <p class="spacer-small">Because several observations for budget were several orders of magnitude
                     greater than the scale of the other predictor variables, I normalized the numerical data
@@ -244,15 +247,10 @@
 
                 <h3>One-Hot-Encoding categorical data</h3>
                 <p class="spacer-small">In order to included categorical variables into the linear regression model, I
-                    decided to one-hot-encode genre and rating as these seemed to be the most directly related to gross.
+                    decided to <b>one-hot-encode</b> <u>genre</u> and <u>rating</u> as these seemed to be the most directly related to gross.
                 </p>
 
-                <h2>Training the model</h2>
-                <h3>KFold Cross-validation</h3>
-                <p class="spacer-small">The model was trained with 10 KFolds.
-                </p>
-
-                <h2>Regression results</h2>
+                <h2>Prediction results</h2>
                 <h3>Actual vs predicted gross</h3>
                 <p class="spacer-small">Below are a 2 of the 10 plots of actual vs predicted gross to help visualize and
                     qualitatively assess the performance of the model.
@@ -268,7 +266,7 @@
                 <div class="image-container">
                     <img src="images\movie\gross_actual_pred2.png" alt="" class="proj-img">
                 </div>
-                <h2>Model accuracy</h2>
+                <h2>How well did the model perform?</h2>
                 <h3>Estimating the t-statistic for each feature in the model</h3>
                 <!-- figure - OLS results -->
                 <div class="image-container">
@@ -276,32 +274,35 @@
                 </div>
 
 
-                <p class="spacer-small">Based on the t-values estimated by the OLS model, not every independent variable
+                <p class="spacer-small">Based on the <u>t-values estimated by the OLS model</u>, not every independent variable
                     included
-                    were statistically significant (t > 0.05).
+                    were statistically significant <b>(t > 0.05)</b>.
                 </p>
-                <h3>Scoring the model </h3>
+                <h3>Scoring the model - <u>K-Fold Cross Validation</u></h3>
                 <!-- figure - model performance -->
                 <div class="image-container">
                     <img src="images\movie\model_performance.PNG" alt="" class="proj-img">
                 </div>
                 <p class="spacer-small">Compared to simple linear regression, where only a single
-                    independent variable is used as a predictor, the average R-squared over 10 folds improved to around
-                    <u>0.86</u>.
+                    independent variable is used as a predictor, the <u>average R-squared over 10 folds</u> improved to around
+                    <b><u>0.86</u></b>. The <u>mean cross validation score</u> was <b><u>0.85</u></b> and <u>mean MSE</u> was <b><u>0.012</u></b>.
                 </p>
-                <h3>Improving the model</h3>
+                <p></p>
+                <p></p>
+                <h3>Improving the model in the future</h3>
                 <p class="spacer-small">It is likely that removing the non statistically significant
-                    variables would improve bot the speed and accuracy of the model.
+                    variables would improve both the speed and accuracy of the model.
                 </p>
+                <p></p>
                 <p class="spacer-small">In terms of improving the prediction, it is possible that including actors and
                     directors
-                    as variables may have an affect. However, one-hot-encoding so many additional variables would slow
+                    as variables may have an affect. However, <b>one-hot-encoding</b> so many additional variables would slow
                     down
                     the model a great deal.
                 </p>
                 <p></p>
                 <p class="spacer-small">See the full Jupyter notebook on my <u><a
-                            href="https://github.com/mia-flo/movie-correlation" target="_blank">github
+                            href="https://github.com/mia-flo/movie-correlation/blob/main/.ipynb_checkpoints/movies-checkpoint.ipynb" target="_blank">GitHub
                             <i class="fa-solid fa-up-right-from-square"></i></a></u></p>
             </div>
 

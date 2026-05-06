@@ -57,7 +57,7 @@
                                 <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
                         </li>
                         <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                                <i class="fa-brands fa-github"></i> github</a>
+                                <i class="fa-brands fa-github"></i> GitHub</a>
                         </li>
                         <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
                                 target="_blank">
@@ -79,23 +79,46 @@
 
             <!-- filter projects -->
             <div class="filter-container">
-                <p>Filters: </p>
                 <button class="filter" onclick="filterElements('all')">All</button>
                 <button class="filter" onclick="filterElements('data')">Data Analysis</button>
                 <button class="filter" onclick="filterElements('ml')">Machine Learning</button>
+                <button class="filter" onclick="filterElements('ai')">AI</button>
                 <button class="filter" onclick="filterElements('python')">Python</button>
                 <button class="filter" onclick="filterElements('SQL')">SQL</button>
                 <button class="filter" onclick="filterElements('tableau')">Tableau</button>
+                <!-- <button class="filter" onclick="filterElements('JS')">JS</button> -->
                 <!-- <button class="filter" onclick="filterElements('C#')">C#</button> -->
             </div>
 
             <div class="projects">
 
+                <!-- gemini data extraction -->
+                <section>
+                    <div class="project-card-filt data ai">
+                        <div class="image-container">
+                            <a href="gemini_data_extraction.html"><img class="img-cover" src="images\reviews_gemini\extract_sentiment.png" alt=""></a>
+                        </div>
+                        <section class="text-container">
+                            <h3 class="title">Utilizing Gemini AI to extract product review data and perform simple sentiment analysis in Google Sheets</h3>
+                            <section class="tag-container">
+                                <p class="tag">Data Analysis</p>
+                                <p class="tag">AI</p>
+                            </section>
+                            <p class="proj-text-filt">I explored the use of AI for analyzing text data and its general use in a data 
+                                analysis workflow.
+                            </p>
+                        </section>
+                        <a href="gemini_data_extraction.html" class="project-link"><button class="button">View Project</button></a>
+                        
+
+                    </div>
+                </section>
+
                 <!-- movie -->
                 <section>
                     <div class="project-card-filt python data ml">
                         <div class="image-container">
-                            <img class="img-cover" src="images\movie\gross_actual_pred.png" alt="">
+                            <a href="movie.html"><img class="img-cover" src="images\movie\gross_actual_pred.png" alt=""></a>
                         </div>
                         <section class="text-container">
                             <h3 class="title">Predicting film gross with multiple linear regression with SKLearn in Python</h3>
@@ -121,7 +144,7 @@
                 <section>
                     <div class="project-card-filt python SQL data">
                         <div class="image-container">
-                            <img class="img-cover" src="images\customers\customer_hist.png" alt="">
+                            <a href="customers.html"><img class="img-cover" src="images\customers\customer_hist.png" alt=""></a>
                         </div>
 
                         <section class="text-container">
@@ -147,7 +170,7 @@
                 <section>
                     <div class="project-card-filt python data">
                         <div class="image-container">
-                            <img class="img-cover" src="images\superstore\sales_prof_timeseries.png" alt="">
+                            <a href="officesupply.html"><img class="img-cover" src="images\superstore\sales_prof_timeseries.png" alt=""></a>
                         </div>
                         <section class="text-container">
                             <h3 class="title">Analysis of the relationship between profit, sales, and discounts for a
@@ -171,7 +194,7 @@
                 <section>
                     <div class="project-card-filt python data ml">
                         <div class="image-container">
-                            <img class="img-cover" src="images\tokyo weather\max_pred.png" alt="">
+                            <a href="weather.html"><img class="img-cover" src="images\tokyo weather\max_pred.png" alt=""></a>
                         </div>
                         <section class="text-container">
                             <h3 class="title">Forecasting Tokyo's daily max temperature with XGBoost</h3>
@@ -194,7 +217,7 @@
                 <section>
                     <div class="project-card-filt SQL python">
                         <div class="image-container">
-                            <img class="img-cover" src="images\database\dbSchema_img.png" alt="">
+                            <a href="database.html"><img class="img-cover" src="images\database\dbSchema_img.png" alt=""></a>
                         </div>
                         <section class="text-container">
                             <h3 class="title">Database design with SQLAlchemy and MySQL</h3>
@@ -215,7 +238,7 @@
                 <section>
                     <div class="project-card-filt SQL tableau data">
                         <div class="image-container">
-                            <img class="img-cover" src="images\covid\vacc_country.PNG" alt="">
+                            <a href="covid.html"><img class="img-cover" src="images\covid\vacc_country.PNG" alt=""></a>
                         </div>
                         <section class="text-container">
                             <h3 class="title">Exploratory analysis of global COVID-19 impact from May 2020-May 2023</h3>

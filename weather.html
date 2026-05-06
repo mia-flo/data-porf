@@ -73,7 +73,7 @@
                   href="https://github.com/mia-flo?tab=repositories"
                   target="_blank"
                 >
-                  <i class="fa-brands fa-github"></i> github</a
+                  <i class="fa-brands fa-github"></i> GitHub</a
                 >
               </li>
               <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes"
@@ -104,15 +104,20 @@
                 class="proj-img"
               />
             </div>
+            <section class="tag-container left">
+              <p class="tag-proj">Data Analysis</p>
+              <p class="tag-proj">Machine Learning</p>
+              <p class="tag-proj">Python</p>
+            </section>
             <!-- description -->
             <p class="spacer-small">
-              <b>Objective: </b>To learn about XGBoost and the pros and cons of
-              gradient boosting methods for prediction
+              <b><u>Objective:</u> </b>To learn about <b>XGBoost</b> and the pros and cons of
+              <b>gradient boosting methods for prediction</b>
             </p>
             <p class="spacer-small">
-              <b>Results: </b>Using XGBoost's regressor I was unable to create a
+              <b><u>Results:</u> Using XGBoost's regressor I was unable to create a
               set of prediction data that reflected the complexity of the
-              training data and temperature extremes.
+              training data and temperature extremes.</b>
             </p>
             <p>
               A different machine learning algorithm is likely better suited for
@@ -120,9 +125,9 @@
               results further and to explore the impact of greenhouse gases,
               etc. on the predictions.
             </p>
-            <p class="spacer-small"><b>Language: </b>Python</p>
+            <p class="spacer-small"><b><u>Language:</u> </b><u>Python</u></p>
             <p class="spacer-small">
-              <b>Tools: </b>
+              <b><u>Tools:</u> </b>
               <ul>
                 <li>XGBoost</li>
                 <li>SKLearn</li>
@@ -133,18 +138,18 @@
               </ul>
             </p>
             <p class="spacer-small">
-              <b>Methods: </b>
+              <b><u>Methods:</u> </b>
               <ul>
-                <li>Time series analysis of daily average, minimum,
+                <li><b>Time series analysis</b> of daily average, minimum,
                   and maximum temperature</li>
-                <li>boxplot analysis of temperature by year and month</li>
-                <li>time
+                <li><b>Boxplot</b> analysis of temperature by year and month</li>
+                <li>Time
                   series split cross validation</li>
-                <li>gradient boosting</li>
+                <li>Gradient boosting</li>
               </ul>
             </p>
             <p class="spacer-small">
-              <b>Data set: </b>source from kaggle (<u
+              <b><u>Data set:</u> </b>source from kaggle (<u
                 ><a
                   href="https://www.kaggle.com/datasets/tom111989/tokyo-weather-dat"
                   >1</a
@@ -163,14 +168,16 @@
           </div>
           <!-- link to github project -->
           <p class="spacer-small">
-            See the full Jupyter Notebook on my
-            <u
-              ><a
-                href="https://github.com/mia-flo/Tokyo-Weather-Time-Series-Forecasting"
-                target="_blank"
-                >github <i class="fa-solid fa-up-right-from-square"></i></a
-            ></u>
-            or scroll down for a more in depth look!
+            <b>
+              See the full <u><a href="https://github.com/mia-flo/Tokyo-Weather-Time-Series-Forecasting/blob/main/.ipynb_checkpoints/Time%20series%20analysis%20and%20forecast%20of%20historical%20Tokyo%20weather%20data-checkpoint.ipynb"
+                  target="_blank">Jupyter Notebook</a></u> on my
+              <u
+                ><a
+                  href="https://github.com/mia-flo/" target="_blank"
+                  >GitHub </a
+              ></u>
+              or scroll down for a more in depth look!
+            </b>
           </p>
 
 
@@ -183,8 +190,8 @@
           </div>
           <p class="spacer-large">
             This figure highlights the cyclical nature of temperature. The daily
-            maximum temperature generally appears to vary within around 5 °C in
-            the winter to 35 °C in peak summer. Already visible is the gradual
+            maximum temperature generally appears to vary within around <b>5 °C</b> in
+            the winter to <b>35 °C</b> in peak summer. Already visible is the gradual
             increase in peak temperatures over time.
           </p>
 
@@ -198,7 +205,7 @@
             />
           </div>
           <p class="spacer-large">
-            Visualizing the mean of maximum, minimum, and average temperatures
+            Visualizing the <b>mean of maximum, minimum, and average</b> temperatures
             by year better illustrates how Tokyo has gotten, on average,
             progressively warmer since 1981.
           </p>
@@ -240,20 +247,19 @@
           <h2>Building the Model with XGBoost's XGBRegressor</h2>
           <p class="spacer-large">
             In an attempt to capture the complexity of the data, I created
-            additional features in the form of 1, 2, 3, 5, 10, and 15 year time
-            lags.
+            additional features in the form of <b>
+              1, 2, 3, 5, 10, and 15 year time
+              lags
+            </b>.
           </p>
           <p class="spacer-small">
-            The model includes 10 time series cross validation splits for
-            training. The test size was 365 days.
+            The model includes <b>10 time series cross validation splits</b> using <b>SKLearn's TimeSeriesSplit</b> with a test size of 365 days.
           </p>
+          <p></p>
+
           <p class="spacer-small">
-            SKLearn's TimeSeriesSplit to create 10 time series cross validation
-            splits.
-          </p>
-          <p class="spacer-small">
-            The prediction model was built using XGBoost's XGBRegressor and
-            scored with SKLearn's mean_squared_error.
+            The prediction model was built using <b>XGBoost's XGBRegressor</b> and
+            scored with <b>SKLearn's mean_squared_error</b>.
           </p>
           <p></p>
           <h3>Feature importance</h3>
@@ -266,9 +272,11 @@
             />
           </div>
           <p class="spacer-large">
-            The model heavily weights the 1 year time lag at +0.45. The next
-            most important features to the model were quarter and the 2 year
-            time lag.
+            The model heavily weights the <u>1 year time lag at <b>+0.45</b></u>. The next
+            most important features to the model were quarter and the <u>
+              2 year
+              time lag
+            </u>.
           </p>
 
           <h3>Predictions vs actual data</h3>
@@ -297,15 +305,15 @@
           <h3>Scoring the model over 10 splits</h3>
 
           <p class="spacer-large">
-            <u>Mean MSE:</u> 3.44 <br />
-            <u>Mean RMSE:</u> 1.86 <br />
+            <u><b>Mean MSE:</u> 3.44</b> <br />
+            <u><b>Mean RMSE:</u> 1.86</b> <br />
             <br />
-            <u>Max temperature mean:</u> 20.29<br />
-            <u>Max temperature standard deviation:</u> 7.99
+            <b><u>Max temperature mean:</u> 20.29</b><br />
+            <b><u>Max temperature standard deviation:</u> 7.99</b>
           </p>
 
           <p class="spacer-small">
-            The RMSE value is quite high and was the first indication of a poor
+            The <u>RMSE value</u> is quite high and was another indication of a poor
             model fit.
           </p>
 
@@ -359,27 +367,31 @@
             The model is predicting that max temperatures will decrease over the
             next few years. Although there are periods of time where the overall
             temperature in Tokyo does fall, I find the prediction of 2027 max
-            summer temperatures to drop to around 25 C to be anomalous.
+            summer temperatures to drop to around <b>25 °C</b> to be anomalous.
           </p>
+          <p></p>
           <p class="spacer-small">
             Weather data in recent years suggests to me that temperatures will
             likely continue to rise, and even during cooler summers, I find it
             unlikely for temperatures to be so low.
           </p>
+          <p></p>
           <p class="spacer-small">
             Gradient boosting may not have been the correct choice of algorithm.
           </p>
-
           <p></p>
+
           <!-- link to github project -->
           <p class="spacer-small">
-            See the full Jupyter Notebook on my
-            <u
-              ><a
-                href="https://github.com/mia-flo/Tokyo-Weather-Time-Series-Forecasting"
-                target="_blank"
-                >github <i class="fa-solid fa-up-right-from-square"></i></a
-            ></u>
+            <b>
+              See the full <u><a href="https://github.com/mia-flo/Tokyo-Weather-Time-Series-Forecasting/blob/main/.ipynb_checkpoints/Time%20series%20analysis%20and%20forecast%20of%20historical%20Tokyo%20weather%20data-checkpoint.ipynb"
+                  target="_blank">Jupyter Notebook</a></u> on my
+              <u
+                ><a
+                  href="https://github.com/mia-flo/" target="_blank"
+                  >GitHub </a
+              ></u>
+            </b>
           </p>
         </div>
 

@@ -72,45 +72,29 @@
   </div> -->
       <div class="section-project">
         <div class="proj-intro">
-          <h1>Project name</h1>
+          <h1>Utilizing Gemini AI to extract product review data and perform simple sentiment analysis in Google Sheets</h1>
           <!-- featured image -->
           <div class="image-container">
-            <img src="#" alt="" class="proj-img">
+            <img src="images\reviews_gemini\extract_sentiment.png" alt="" class="proj-img">
           </div>
           <!-- tags -->
           <section class="tag-container left">
-            <p class="tag-proj">Data Analysis</p>
-            <p class="tag-proj">Machine Learning</p>
-            <p class="tag-proj">AI</p>
-            <p class="tag-proj">Python</p>
-            <p class="tag-proj">SQL</p>
-            <p class="tag-proj">Tableau</p>
-            <p class="tag-proj">C#</p>
+              <p class="tag-proj">Data Analysis</p>
+              <p class="tag-proj">AI</p>
           </section>
           <!-- description -->
-          <p class="spacer-small"><b><u>Objective:</u> </b></p>
-          <p class="spacer-small"><b><u>Results:</u> </b></p>
-          <p class="spacer-small"><b><u>Future steps:</u></b></p>
-          <p class="spacer-small"><b><u>Language:</u> </b></p>
-          <p class="spacer-small"><b><u>Tools:</u> </b></p>
-          <p class="spacer-small"><b><u>Methods:</u> </b>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul></p>
+          <p class="spacer-small"><b><u>Objective:</u> </b>To explore the use of AI in a data analysis workflow for a project
+            focused on analyzing text-based data.</p>
+          <p class="spacer-small"><b><u>Results:</u> So far I have found to be most useful for creating summaries such as pivot tables 
+          and analyzing text.</b></p>
+
           <p class="spacer-small"><b><u>Data set:</u> </b>sourced from <u><a
-                  href=#></a></u>
-              <ul>
-                <li>number of data points</li>
-              </ul>
+                  href="https://www.rei.com/product/236069/la-sportiva-tc-pro-climbing-shoes">REI's La Sportiva TC Pro Climbing Shoes</a></u>
           </p>
           <p></p>
         </div>
         <p class="spacer-small"><b>
-          See the full <u><a href="" target="_blank">Jupyter Notebook</a></u> on my <u><a href="#" target="_blank">GitHub
+          See more projects on my the <u><a href="">project page</a></u> or my <u><a href="#" target="_blank">GitHub
                 </a></u> or scroll down for a more
             in-depth look!
         </b>
@@ -121,30 +105,60 @@
         </div>
 
 
-        <h2>what it's about forreal</h2>
-        <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-          here</p>
+        <h2>Tasks I gave to Gemini:</h2>
+
+        <ul>
+          <li>To <b>extract</b> review data into a table</li>
+          <li>Simple <b>sentiment analysis</b> of reviews <u>(Positive, Neutral, Negative)</u></li>
+          <li>1-word <b>categorization</b> <u>(Sizing, Material, Durability, Comfortability, Price, Performance)</u> of the 
+            primary like or dislike extracted from reviews 
+            </li>
+          <li><b>Recommend data normalization techniques</b> for the 'Thumbs up' and 'Thumbs down'
+            count on individual reviews to assess engagement and the helpfulness of a review
+          </li>
+          <li><b>Recommend sample weighting techniques</b> in order to quantify the importance of each review based on engagement</li>
+          <li>Create a <b>pivot table</b> that summarizes the data by grouping reviews by sentiment, complaint, star rating, and level of engagement</li>
+          <li>Create a <b>summary tab</b> targeted towards executives</li>
+        </ul>
+
+        
+        <h2>Pros of using Gemini in the workflow</h2>
+        <!-- figure -->
+
+        <ul>
+          <li>Data extraction was easy and fast.</li>
+          <li>Simple sentiment analysis was quick, easy, and generally accurate.</li>
+          <li>Categorization, when provided with enough categories, was mostly accurate.</li>
+          <li>Is able to explain some pros and cons when recommending techniques or calculations.</li>
+          <li>Gemini generated a decent summary of the data.</li>
+          <li>Generating the pivot table was fast and easy - it even asked clarifying questions.</li>
+          <li>The executive summary tab I asked it to create was generated a bit faster than if done by hand.</li>
+        </ul>
+
+        <div class="image-container">
+          <img src="images\reviews_gemini\transform_rec.png" alt="" class="proj-img">
+        </div>
+
         <!-- figure -->
         <div class="image-container">
           <img src="" alt="" class="proj-img">
         </div>
-        <h2>what it's about forreal</h2>
-        <p class="spacer-large">description goes heredescription goes heredescription goes heredescription goes
-          here</p>
-        <!-- figure -->
-        <div class="image-container">
-          <img src="" alt="" class="proj-img">
-        </div>
-        <h2>what it's about forreal</h2>
-        <p class="spacer-xlarge">description goes heredescription goes heredescription goes heredescription goes
-          here
-        </p>
+        <h2>Cons when using Gemini in the work flow</h2>
+        <ul>
+          <li>Data point extraction was limited in number (<u>15 out of 80+ reviews</u>). Scraping the webpage manually would have
+            resulted in a much richer data set.
+          </li>
+          <li>The information given by Gemini wasn't always entirely accurate - <u>an example shown in the figure above: 
+            it said 29 votes was the highest engagement when it was in fact 73</u>.</li>
+          <li>Certain tasks are completed more efficiently by hand ex: <b>conditional formatting and some simple plots or calculations</b>.</li>
+        </ul>
+
         <!-- figure -->
         <div class="image-container">
           <img src="" alt="" class="proj-img">
         </div>
         <p class="spacer-small"><b>
-          See the full <u><a href="" target="_blank">Jupyter Notebook</a></u> on my <u><a href="#" target="_blank">GitHub
+          See the more projects on my <u><a href="#" target="_blank">GitHub
                 </a></u>
         </b></p>
         <p></p>

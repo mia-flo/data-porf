@@ -57,7 +57,7 @@
                 <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </li>
             <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i> github</a></li>
+                <i class="fa-brands fa-github"></i> GitHub</a></li>
             <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
             <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a>
         </li> -->
@@ -80,18 +80,22 @@
           <div class="image-container">
             <img src="images\superstore\sales_prof_timeseries.png" alt="" class="proj-img">
           </div>
+          <section class="tag-container left">
+              <p class="tag-proj">Data Analysis</p>
+              <p class="tag-proj">Python</p>
+          </section>
           <!-- description -->
-          <p class="spacer-small"><b>Objective: </b>
+          <p class="spacer-small"><b><u>Objective:</u> </b>
             <ol>
               <li>To explore the impact of discounts on sales and profit
-                for a </li>
+                for a global office supply retailer</li>
               <li>To determine what percentages of discounts were associated with increased profit</li>
             </ol>
           </p>
-          <p class="spacer-small"><b>Results: </b>Discounts at the 7-20% level are associated with a statistically
-            significant
-            increase in both sales and profit.</p>
-          <p class="spacer-small"><b>Language: </b>Python</p>
+          <p class="spacer-small"><b><u>Results:</u> Discounts at the <u>7-20%</u> level are associated with a <b?>
+            statistically significant increase in both sales and profit </b>
+          </u>.</p>
+          <p class="spacer-small"><b>Language: </b><u>Python</u></p>
           <p class="spacer-small"><b>Tools: </b>
             <ul>
               <li>Pandas</li>
@@ -103,29 +107,31 @@
               <li>Scikit-Learn</li>
             </ul>
           </p>
-          <p class="spacer-small"><b>Methods: </b>
+          <p class="spacer-small"><b><u>Methods:</u> </b>
             <ul>
-              <li>Time series analysis of revenue and profit</li>
-              <li>Linear regression</li>
-              <li>Probability calculation for a given dollar amount at a specified discount percentage</li>
-              <li>1 sample t-tests to determine whether the impact of discounted sales were statistically significant</li>
+              <li><b>Time series analysis</b> of revenue and profit</li>
+              <li><b>Linear regression</b> to predict profit as a function of sales</li>
+              <li><b>Probability calculation</b> for a given dollar amount at a specified discount percentage</li>
+              <li><b>1 sample t-tests</b> to determine whether the impact of discounted sales were statistically significant</li>
             </ul>
           </p>
 
-          <p class="spacer-small"><b>Data set: </b>sourced from <u><a
+          <p class="spacer-small"><b><u>Data set:</u> </b>sourced from <u><a
                 href="https://www.kaggle.com/datasets/apoorvaappz/global-super-store-dataset">kaggle</a></u>
             <ul>
-              <li>51,290 records</li>
-              <li>47 countries</li>
-              <li>1,590 customers</li>
+              <li><b>51,290</b> records</li>
+              <li><b>47</b> countries</li>
+              <li><b>1,590</b> customers</li>
             </ul>
           </p>
           <p></p>
         </div>
-        <p class="spacer-small">See the full project on my <u><a
-              href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
-              <i class="fa-solid fa-up-right-from-square"></i></a></u> or scroll down for a more
-          in depth look!
+        <p class="spacer-small"><b>
+          See the full <u><a href="https://github.com/mia-flo/Global-superstore-inventory/blob/main/.ipynb_checkpoints/global%20super%20store-checkpoint.ipynb" target="_blank">Jupyter Notebook</a></u> on my <u><a
+                href="https://github.com/mia-flo/" target="_blank">GitHub
+                </a></u> or scroll down for a more
+            in-depth look!
+        </b>
         </p>
 
         <!-- <h3>How many orders have a Profit/Sales ratio > 30%</h3>
@@ -166,7 +172,7 @@
           <img src="images\superstore\discount_dist.png" alt="" class="proj-img">
         </div>
         <p class="spacer-small">The business offers a wide range of discount percentages ranging
-          from 7 to 85%. A surprising number of those discounts are 40% and above. This likely contributes to the
+          from <b>7-85%</b>. A surprising number of those discounts are <b>40%</b> and above. This likely contributes to the
           low profitability of the business.</p>
         <h3>Sales by discount percentage</h3>
         <!-- sales by discount percentage -->
@@ -179,49 +185,48 @@
         <div class="image-container">
           <img src="images\superstore\prof_discount_dist.png" alt="" class="proj-img">
         </div>
-        <p class="spacer-small">The only profitable discounts are between the 7-20% level, with 7% corresponding
+        <p class="spacer-small">The only profitable discounts are between the <b>7-20%</b> level, with <b>10%</b> corresponding
           to both the highest sales and profit.
         </p>
 
-        <h3>What proportion of orders by discount percentage are truly profitable?
+        <h3>What proportion of orders by discount percentage are truly profitable (<u>profit >= 30%</u>)?
         </h3>
 
         <!-- 30% profit/sales ratio -->
         <div class="image-container">
           <img src="images\superstore\profsales_30_dist.png" alt="" class="proj-img">
         </div>
-        <p class="spacer-small">Displaying the Profit/Sales ratio > 30% as a function of discount percentage
+        <p class="spacer-small">Displaying the <b><u>Profit/Sales ratio > 30%</u></b> as a function of discount percentage
           further highlights how detrimental a large quantity of high discount percentages has been to this
           business.
         </p>
 
         <h2>Time series analysis of sales, profit, and discounts</h2>
-        <h3>Has the increased number of discounts given correspond to an increase in orders?</h3>
+        <h3>Has the increased number of discounts given correspond to an increase in transactions (orders)?</h3>
         <!-- number of discounts and orders time series -->
         <div class="image-container">
           <img src="images\superstore\num_timeseries.png" alt="" class="proj-img">
         </div>
         <p class="spacer-small">The number of monthly discounts and orders display similar trends of increasing
           throughout
-          the year. There also appears to be a cyclical pattern, with spikes in June, September, and November.
+          the year. There also appears to be a <u>cyclical pattern, with spikes in June, September, and November</u>.
         </p>
 
-        <p class="spacer-small">The fact that both the average orders and average number of discounts provided
-          almost doubled in amount from 2011 to 2014 further supports the idea that an increase in provided
-          discounts
-          likely leads to an increase in orders.</p>
         <h3>Has an increase in the number of unique orders translated to an increase in sales and profit from
           2011-2014?
         </h3>
+
         <!-- sales and profit time series -->
         <div class="image-container">
           <img src="images\superstore\sales_prof_timeseries.png" alt="" class="proj-img">
         </div>
+        <p></p>
         <p class="spacer-small">The trend of sales amount per month is similar to that of the number of discounts
           and
           orders.
-          However, profit has remained relatively stagnant average sales more than doubling from 2011-2014.
+          However, <u>profit has remained relatively stagnant average sales more than doubling from 2011-2014</u>.
         </p>
+        <p></p>
 
         <!-- cummulative orders per month based on highest absolute value profit -->
         <div class="image-container">
@@ -233,7 +238,8 @@
           <img src="images\superstore\cummuprof_disc_month.png" alt="" class="proj-img">
         </div>
 
-        <h3>Sales and profit probability</h3>
+        <h2>How probable is it 
+          to achieve a certain dollar amount in sales and in profit at a 10% discount?</h2>
 
         <!-- probability calculation of sales >=$50 at 10% discount -->
         <div class="image-container">
@@ -246,16 +252,7 @@
         </div>
 
 
-        <h2>How well can we predict profit as a function of sales by grouped discount percentages?</h2>
-        <p class="spacer-small">Offering timely and cost effective (?) discounts is a critical aspect of
-          running a successful business. Unfortunately, this business has suffered from several low-profit years of
-          operation
-          despite an increase in sales over time.
-        </p>
-
-        <p class="spacer-small">With linear regression, we can attempt to predict profit as a function of sales,
-          while also grouping by discount percentage.
-        </p>
+        <h2>How much of the variation in profit (for grouped discount percentages) is explained by sales?</h2>
 
         <!-- discount bracket linear regression -->
         <div class="image-container">
@@ -276,7 +273,7 @@
         <!-- <div class="image-container">
             <img src="images\superstore\log10_sales.png" alt="" class="proj-img">
           </div> -->
-        <h3>Groups for sales 1 sample t-test</h3>
+        <h3>Groups for sales <u>1 sample t-test</u></h3>
         <p class="spacer-small">The sales distribution was log normalized prior to the t-test.</p>
         <!-- sales group info -->
         <div class="image-container">
@@ -297,14 +294,14 @@
         </p>
         <p class="spacer-small"><u>Mean difference</u> = population mean - sample mean</p>
         <p class="spacer-small">In this context, a negative mean difference is desirable.</p> -->
-        <p class="spacer-small">7-20% discount do indeed lead to an increase in sales overall and in 2014, the highest
-          sales year.</p>
+        <p class="spacer-small"><b>7-20%</b> discount do indeed lead to an <b>increase in sales</b> overall and in 2014, the year 
+          with the highest sales.</p>
 
         <h2>Most importantly, are discounts also leading to an increase in profit?</h2>
         <p class="spacer-small">The profit distribution is already approximately normal so no transformation was
           necessary.</p>
 
-        <h3>Groups for profit 1 sample t-test</h3>
+        <h3>Groups for profit <u>1 sample t-test</u></h3>
         <!-- profit t-test groups -->
         <div class="image-container">
           <img src="images\superstore\profit_groups.PNG" alt="" class="proj-img">
@@ -315,17 +312,21 @@
         <div class="image-container">
           <img src="images\superstore\profit_ttest.PNG" alt="" class="proj-img">
         </div>
-        <p class="spacer-small">7-20% discount do indeed lead to an increase in profit overall and in 2014, the highest
+        <p class="spacer-small"><b>7-20%</b> discount do indeed lead to an <b>increase in profit</b> overall and in 2014, the highest
           sales year.</p>
+        <p></p>
         <p class="spacer-small">However, profit has still been stagnant for this business, in part due to the large
-          number of >20% discounts offered.</p>
+          number of <b>>20%</b> discounts offered.</p>
 
+        <p></p>
+        <p class="spacer-small"><b>
+          See the full <u><a href="https://github.com/mia-flo/Global-superstore-inventory/blob/main/.ipynb_checkpoints/global%20super%20store-checkpoint.ipynb" target="_blank">Jupyter Notebook</a></u> on my <u><a
+                href="https://github.com/mia-flo/" target="_blank">GitHub
+                </a></u>
+        </b>
+        </p>
       </div>
-      <p></p>
-      <p class="spacer-small">See the full project on my <u><a
-            href="https://github.com/mia-flo/Global-superstore-inventory" target="_blank">github
-            <i class="fa-solid fa-up-right-from-square"></i></a></u>
-      </p>
+
     </div>
     <!-- to top -->
     <div>

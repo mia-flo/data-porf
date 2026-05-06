@@ -100,18 +100,6 @@ body {
   padding: var(--section-padding);
 }
 
-.section-header {
-  font-weight: 400;
-  line-height: 80%;
-  margin-bottom: 1rem 0;
-  color: var(--dark-accent);
-
-  @media all and (max-width: 50rem) {
-    padding: 0.5rem;
-    padding-bottom: 0.6rem;
-  }
-}
-
 .section ul {
   padding-left: 1em;
 }
@@ -127,6 +115,20 @@ body {
 
 .center-text {
   text-align: center;
+}
+
+.left {
+  justify-content: left !important;
+  align-items: left !important;
+  text-align: left !important;
+}
+
+/* .zero-margin {
+  margin: 0 !important;
+} */
+
+.small-margin {
+  margin: 1rem !important;
 }
 
 /* Main
@@ -188,7 +190,6 @@ main {
 
 /* main content */
 .main-bar {
-  /* background-color: blueviolet; */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -204,17 +205,38 @@ main {
 .links {
   display: flex;
   flex-direction: column;
-  flex: 2;
-  display: flex;
   align-items: center;
   justify-content: center;
-  height: 2rem;
-  width: 100%;
-  margin-top: 2rem;
+  width: 90%;
+  height: auto;
+  margin-top: 5rem;
+  padding: 0;
+}
+
+.links-left {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  width: 90%;
+  height: auto;
+  padding: 0;
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem 0 0;
+  color: var(--dark-accent);
+  text-decoration: none;
+  font-size: 20px;
 }
 
 .contact-link a {
   color: var(--dark-accent);
+  align-items: left;
+  justify-content: left;
 }
 
 .nav-out {
@@ -228,16 +250,6 @@ main {
   width: 100%;
 }
 
-.contact-link {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem 0 0;
-  color: var(--dark-accent);
-  text-decoration: none;
-  font-size: 20px;
-}
-
 .contact-link:hover {
   color: var(--accent);
 }
@@ -249,12 +261,14 @@ main {
   background: var(--dark-accent);
 }
 
-/*  links within text*/
-.spacer-small a:link {
-  color: red;
+.section-header {
+  width: 90%;
+  align-items: left;
+  text-align: left;
 }
 
-.spacer-small a:visited {
+/*  links within text*/
+.spacer-small a:link {
   color: blue;
 }
 
@@ -270,6 +284,10 @@ main {
 }
 
 .fa-brands {
+  font-size: 16px;
+}
+
+.fa-regular {
   font-size: 16px;
 }
 
@@ -335,13 +353,11 @@ input {
 /* header section */
 
 .main-text-container {
-  height: 20rem;
-  width: 80%;
-  background-color: var(--light-accent);
+  margin-top: 2.5rem;
+  height: auto;
+  width: 90%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /* home page -- featured project cards*/
@@ -364,23 +380,26 @@ input {
 }
 
 .col1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50%;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  margin: 0.5rem;
 }
 
 .col2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 50%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  margin: 0.5rem;
 }
 
 /* project cards on homepage */
 .project-card {
-  width: 60%;
-  height: 25rem;
+  width: 75%;
+  max-width: 500px;
+  height: 26rem;
   margin-bottom: 4rem;
   background-color: var(--main-color-2);
   color: var(--dark-accent);
@@ -397,6 +416,14 @@ input {
   justify-content: center;
   padding: 0.25rem;
   margin: 0.25rem;
+}
+
+.image-container-home a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
 }
 
 .img-cover {
@@ -428,7 +455,7 @@ input {
   height: 30%;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   font-size: 16px;
 }
 
@@ -449,7 +476,9 @@ input {
   align-items: center;
   justify-content: center;
   text-align: left;
-  max-width: 800px;
+  /* max-width: 800px; */
+  width: 90%;
+  /* margin: 0 4rem 4rem 4rem; */
 }
 
 .filter-container {
@@ -473,6 +502,16 @@ input {
 
 .filter:hover {
   background-color: var(--accent);
+}
+
+.filter:focus {
+  color: var(--light-accent);
+  background-color: var(--dark-accent);
+}
+
+.selected {
+  color: var(--light-accent);
+  background-color: var(--dark-accent);
 }
 
 .projects {
@@ -506,6 +545,14 @@ input {
   height: 50%;
 }
 
+.image-container a {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
 .tag-container {
   display: flex;
   flex-direction: row;
@@ -523,13 +570,23 @@ input {
   font-size: 12px;
 }
 
+.tag-proj {
+  margin: 0 1vw;
+  padding: 0.25vw;
+  width: auto !important;
+  background-color: var(--light-accent);
+  color: var(--dark-accent);
+  border-radius: 8%;
+  font-size: 16px;
+}
+
 .text-container {
   height: 40%;
   padding: 0 0.5rem;
 }
 
 .title {
-  text-align: center;
+  text-align: left;
   font-size: 20px;
   margin: 0.25rem;
   padding: 0;
@@ -543,7 +600,7 @@ input {
 /* project card button */
 .button {
   float: right;
-  font-size: 12px;
+  font-size: 16px;
   font-style: bold;
   border-radius: 10%;
   padding: 0.2rem;
@@ -552,6 +609,9 @@ input {
   background-color: var(--accent);
   color: var(--dark-accent);
   width: auto;
+  position: relative;
+  right: 0.5rem;
+  bottom: 0.5rem;
 }
 
 button:hover {
@@ -560,29 +620,17 @@ button:hover {
 
 /* project pages */
 .proj-img {
-  width: 70%;
+  width: 90%;
+  height: auto;
 }
 
 .section-project h1 h2 h3 {
-  margin: 0.5rem;
+  margin: 0.25rem;
 }
 
 .section-project p {
-  width: 90%;
+  width: inherit;
 }
-
-.proj-intro ul {
-  margin: 0 0 0 4rem;
-  padding: 0;
-}
-
-/* other */
-
-/* .active {
-  color: var(--accent);
-} */
-
-/*  */
 
 /* filter */
 
@@ -617,7 +665,7 @@ button:hover {
 
 /* ---- media queries ---- */
 /* ------- monitors and desktops ------- */
-@media screen and (max-width: 1980px) {
+@media screen and (min-width: 1980px) {
   /* home page project cards */
 
   /* all project cards */
@@ -678,6 +726,7 @@ button:hover {
 }
 
 /* ------- tablets ------- */
+/* 1024 */
 @media screen and (max-width: 1024px) {
   /* main - change to single column for feat proj */
   main {
@@ -714,12 +763,17 @@ button:hover {
     top: 1.5rem;
     left: -450px;
     transition: 0.3s ease;
+    font-size: 16px;
   }
 
   .off-screen-menu ul {
     list-style-type: none;
-    padding: 0 0 0 0.3rem;
+    padding: 0 0 0 0.5rem;
     text-align: left;
+  }
+
+  .off-screen-menu li {
+    padding: 0.25rem;
   }
 
   .off-screen-menu a:hover {
@@ -770,8 +824,9 @@ button:hover {
   /* home page project cards */
 
   .project-card {
-    width: 50%;
-    margin: 1rem;
+    width: 60%;
+    /* max-width: 500px; */
+    margin: 0.5rem;
   }
 
   .tag {
@@ -788,12 +843,16 @@ button:hover {
   }
 
   .button {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
 /* -------mobile------- */
 @media screen and (max-width: 540px) {
+  .section-header {
+    margin: 0;
+  }
+
   .nav-out {
     font-size: 0.5em;
   }
@@ -823,20 +882,28 @@ button:hover {
     font-size: 18px;
   }
 
+  .main-text-container {
+    font-size: 14px;
+  }
+
   .row1 {
     flex-direction: column;
+    margin: 0.1rem;
   }
 
   .row2 {
     flex-direction: column;
+    margin: 0.1rem;
   }
 
   .col1 {
     width: 100%;
+    margin: 0.1rem;
   }
 
   .col2 {
     width: 100%;
+    margin: 0.1rem;
   }
 
   /* home page project cards */
@@ -864,18 +931,14 @@ button:hover {
   }
 
   .button {
-    font-size: 10px;
+    font-size: 9px;
     width: auto;
   }
 
   /* all projects page */
 
-  .filter-container {
-    font-size: 10px;
-  }
-
   .filter {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .project-card-filt {
@@ -885,7 +948,7 @@ button:hover {
   }
 
   .title {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .proj-text-filt {

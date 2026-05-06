@@ -55,7 +55,7 @@
                 <i class="fa-brands fa-linkedin"></i> LinkedIn</a>
             </li>
             <li class="contact-link"><a href="https://github.com/mia-flo?tab=repositories" target="_blank">
-                <i class="fa-brands fa-github"></i> github</a></li>
+                <i class="fa-brands fa-github"></i> GitHub</a></li>
             <!-- <li class="contact-link"><a href="https://public.tableau.com/app/profile/mia.flores6838/vizzes" target="_blank">
             <i class="fa-solid fa-magnifying-glass-chart"></i>Tableau Public</a> -->
             </li>
@@ -76,12 +76,17 @@
           <div class="image-container">
             <img src="images\database\dbSchema_img.png" alt="" class="proj-img">
           </div>
+          <!-- tags -->
+          <section class="tag-container left">
+              <p class="tag-proj">Python</p>
+              <p class="tag-proj">SQL</p>
+          </section>
           <!-- description -->
-          <p class="spacer-small"><b>Objective: </b>Normalize a database to reduce redundancy and improve query efficiency</p>
-          <p class="spacer-small"><b>Results: </b>Turned the database into 6 tables 
-            normalized to the fourth normal form (4NF) and created audit tables to track changes</p>
-          <p class="spacer-small"><b>Languages: </b>Python, SQL</p>
-          <p class="spacer-small"><b>Tools: </b></p>
+          <p class="spacer-small"><b><u>Objective:</u> </b><b>Normalize a database</b> to reduce redundancy and improve query efficiency</p>
+          <p class="spacer-small"><b><u>Results:</u> </b>Turned the database into 6 tables 
+            normalized to the <b>fourth normal form (4NF)</b> and created <b>audit tables to track changes</b></p>
+          <p class="spacer-small"><b><u>Languages:</u> </b><u>Python</u>, <u>SQL</u></p>
+          <p class="spacer-small"><b><u>Tools:</u> </b></p>
           <p class="spacer-small">&emsp;<u>Jupyter notebooks:</u>
               <ul>
                 <li>SQLAlchemy</li>
@@ -90,45 +95,48 @@
           </p>
           <p class="spacer-small">&emsp;<u>MySQL Workbench</u></p>
           <p></p>
-          <p class="spacer-small"><b>Methods: </b> </p>
+          <p class="spacer-small"><b><u>Methods:</u> </b> </p>
           <p class="spacer-small">
-            Python:
+            <u>Python:</u>
             <ul>
-              <li>UUID4 in to generate unique user ids for 92 customers</li>
+              <li>UUID4 in to generate <b>unique user ids for 92</b> customers</li>
               <li>Merging dataframes with Pandas</li>
-              <li>Lambda function and apply() to calculate total sales over 2,823 rows</li>
+              <li>Lambda function and apply() to calculate total sales over <b>2,823</b> rows</li>
             </ul>
-            MySQL:
+            <u>MySQL:</u>
             <ul>
-              <li>Recursive common table expressions </li>
-              <li>Window functions to sum total sales over individual orders</li>
-              <li>Stored procedures to summarize the sales for the most recent year and most recent month</li>
-              <li>Database triggers to track updates in product MSRP and customer address</li>
+              <li><b>Recursive common table expressions </b></li>
+              <li><b>Window functions</b> to sum total sales over individual orders</li>
+              <li><b>Stored procedures</b> to summarize the sales for the most recent year and most recent month</li>
+              <li><b>Database triggers</b> to track updates in product MSRP and customer address</li>
             </ul></p>
-          <p class="spacer-small"><b>Data set: </b>sourced from <u><a
+          <p class="spacer-small"><b><u>Data set:</u> </b>sourced from <u><a
             href="https://www.kaggle.com/datasets/kyanyoga/sample-sales-data">kaggle</a></u>
               <ul>
-                <li>2,823 records</li>
+                <li><b>2,823</b> records</li>
               </ul>
           </p>
           <p></p>
         </div>
-        <p class="spacer-small">See the full project on my <u><a href="https://github.com/mia-flo/database_design" target="_blank">github
-              <i class="fa-solid fa-up-right-from-square"></i></a></u>
-        </p>
+        <p class="spacer-small"><b>
+          See the <u><a href="https://github.com/mia-flo/database_design/blob/main/.ipynb_checkpoints/dbDesign-checkpoint.ipynb"
+            target="_blank">Jupyter notebook</a></u> or the <u><a href="https://github.com/mia-flo/database_design/tree/main" target="_blank">SQL code </a></u>  on my <u><a
+                      href="https://github.com/mia-flo/" target="_blank">GitHub
+                      </a></u> or scroll down for a more in-depth look!
+        </b></p>
         <h2>Database normalization to 4NF</h2>
         <div class="image-container">
           <img src="images\database\original.png" alt="" class="proj-img">
         </div>
 
-        <p>The large, 25 column table was broken down into smaller, more manageable tables.
+        <p>The large, 25 column table was broken down into 6 smaller, more manageable tables.
         </p>
 
         <p>To improve query efficiency and reduce redundancy:</p>
         <ul>
-          <li>created unique customer and address ids</li>
-          <li>dropped the deal-size column</li>
-          <li>used SQLAlchemy in Jupyter notebooks to organize the data into 6 tables</li>
+          <li>created <b>unique customer and address ids</b></li>
+          <li>dropped the ambiguous deal-size column</li>
+          <li>used<b> SQLAlchemy in Jupyter notebooks</b> to organize and load data into 6 tables</li>
         </ul>
 
         <div class="image-container">
@@ -136,26 +144,32 @@
         </div>
 
 
-        <h2>Stored procedures</h2>
-        <p>summary of sales and units for the most recent year and month of orders</p>
-        <p>customer summary for the USA based customers, the largest market</p>
-        <p>unshipped orders</p>
+        <h2>Stored procedures for a more efficient workflow</h2>
+
+        <ul>
+          <li><b>Summary of sales and units</b> for the most recent year and month of orders</li>
+          <li><b>Customer data summary</b> for the USA based customers, the largest market</li>
+          <li><b>Querying data for unshipped orders</b></li>
+        </ul>
 
         <div class="image-container">
           <img src="images\database\month_procedure.png" alt="" class="proj-img">
         </div>
 
-        <h2>Database triggers</h2>
+        <h2>Tracking changes with database triggers</h2>
         <div class="image-container">
           <img src="images\database\msrp_trigger.png" alt="" class="proj-img">
         </div>
-        <p>After update trigger to update product MSRP and track the changes in an audit table</p>
-        <p>After update trigger to update customer address and track the changes in an audit table</p>
+        <p class="spacer-small">Updates to <b>product MSRP</b> and <b>customer address</b> are tracked in an audit tables with an <b>after update trigger</b>.</p>
+
 
         <p></p>
-        <p class="spacer-small">See the full project on my <u><a
-                    href="https://github.com/mia-flo/database_design" target="_blank">github
-                    <i class="fa-solid fa-up-right-from-square"></i></a></u></p>
+        <p class="spacer-small"><b>
+          See the <u><a href="https://github.com/mia-flo/database_design/blob/main/.ipynb_checkpoints/dbDesign-checkpoint.ipynb"
+            target="_blank">Jupyter notebook</a></u> or the <u><a href="https://github.com/mia-flo/database_design/tree/main" target="_blank">SQL code </a></u>  on my <u><a
+                      href="https://github.com/mia-flo/" target="_blank">GitHub
+                      </a></u>
+        </b></p>
       </div>
 
       <!-- to top -->
